@@ -1,6 +1,6 @@
 # Assumptions record
 
-Standing assumptions the design depends on, each with the observation that would show it stopped holding, plus the facts the project has measured. Maintained by design interviews. The system design that produced the first entries is issue #1; the scaffold and ingest interview (issue #2) added A15 to A18 and the second block of measured facts; the card data interview (issue #3) added A19 to A22, sharpened A7 and A15, and added the Scryfall block of measured facts.
+Standing assumptions the design depends on, each with the observation that would show it stopped holding, plus the facts the project has measured. Maintained by design interviews. The system design that produced the first entries is issue #1; the scaffold and ingest interview (issue #2) added A15 to A18 and the second block of measured facts; the card data interview (issue #3) added A19 to A22, sharpened A7 and A15, and added the Scryfall block of measured facts; A21 fell during the implementation the same day and moved to X3.
 
 An assumption is a statement the design treats as true without the code enforcing it. When one stops holding, every branch that hangs off it needs a second look, so each entry names the observation that would falsify it.
 
@@ -15,7 +15,7 @@ An assumption is a statement the design treats as true without the code enforcin
 | A5 | WotC Commander Bracket definitions evolve. | Analyzer | Hedged: rules are versioned data | n/a |
 | A6 | Decks at a table should be balanced against each other. | Composer | Confirmed as a review criterion, not a gate | n/a |
 | A7 | The collection stays within ten times today's size (603 distinct names). | Card data, composer | Holds. The whole collection view (about 130 KB today) is estimated to fit one context window until roughly five times today's size (#3) | The collection view no longer fits in one context window. Use the filter path: grep and awk over the view inside the session. |
-| A8 | Tokens and emblems are never deck candidates. | Card data | Confirmed. The catalog keeps every never-candidate in its token section, classified by Scryfall layout; the view excludes them (#3) | A format that lists tokens. |
+| A8 | Tokens and emblems are never deck candidates. | Card data | Confirmed. The catalog keeps every never-candidate in its token section, classified by Scryfall layout or token set type (ADR-0008); the view excludes them (#3) | A format that lists tokens. |
 | A9 | Composition identity is the card name; foil and condition are irrelevant. | Data model | Confirmed | Foil-only or condition-aware requests. |
 | A10 | Built decks are handed to other players, so the playbook targets a pilot who has never seen the deck. | Artifacts | Inferred during capture, not confirmed by the owner | The owner says playbooks are for themself only. |
 | A11 | The ManaBox deck import format is: a `// COMMANDER` section, mainboard lines, optional `// SIDEBOARD` and `// MAYBEBOARD` sections, each line `N Name`. | Artifacts | Stated by the owner | A failed import. Verify by hand after every format change. |
@@ -28,7 +28,6 @@ An assumption is a statement the design treats as true without the code enforcin
 | A18 | The Added timestamp is stable per row across exports. | Ingest | Holds across two exports: 0 of 813 lots present in both changed Added | A re-export whose diff changes Added on otherwise unchanged lots. Then drop the column; the lot key already excludes it. |
 | A19 | One exact Scryfall name maps to one oracle_id among cards with a card layout. | Card data | Holds for every card seen. Enforced at every catalog build: a collision fails `cards enrich` with `name_collision` | A `name_collision` failure. Known offenders: Unstable variants such as Everythingamajig, six different cards under one name, none owned. Resolution then: a disambiguation rule, decided when it happens. |
 | A20 | Scryfall's collection endpoint resolves every owned printing by Scryfall ID and every exact name. | Card data | Verified 676 of 676 printings, 2026-09-14 | A `printing_not_found` failure on an owned lot, typically a printing Scryfall merged or deleted. Re-scan the card in ManaBox and ingest again. |
-| A21 | The Scryfall layout alone decides whether an object can be a deck candidate; set_type is never needed. | Card data | Holds for the 676 owned printings: token layout marks every one of the 34 token printings | A never-candidate arriving with a card layout, or a real card with a token layout. Extend the classification rule. |
 | A22 | Staleness between explicit refreshes is acceptable: legality, the Game Changer flag and edhrec_rank drift only until the owner runs `cards refresh`. | Card data, analyzer | Accepted by the owner, 2026-09-14 | A table built under stale legality, such as a card banned after the last refresh passing the analyzer. Run `cards refresh` before composing when online. |
 
 ## Invalidated
@@ -39,6 +38,7 @@ Assumptions that stopped holding, kept so nobody re-derives them.
 |---|---|---|---|
 | X1 | The tool makes no cards-to-buy recommendations. | No price awareness and no shopping lists. Unowned upgrades are in scope as the maybeboard. | #1, 2026-09-14 |
 | X2 | Tables must be disjoint from each other. | Tables are independent selections; disjointness holds within a table. One table is built at a time. | #1, 2026-09-14 |
+| X3 | The Scryfall layout alone decides whether an object can be a deck candidate (was A21). | An object is a token when its layout is a token layout or its printing's `set_type` is `token` (ADR-0008). Fell on the first real catalog build: the Role token "Monster // Sorcerer" from the Wilds of Eldraine token set has layout `flip`, and dungeons have layout `normal`. | #3 implementation, 2026-09-14 |
 
 ## Measured facts
 

@@ -1,6 +1,6 @@
 # ADR-0003 — The catalog holds Scryfall facts only, keyed by card with printings nested, in one JSON file under the collection-file convention
 
-**Status:** Accepted (2026-09-14) · **Ticket:** [#3](https://github.com/mattiasthalen/deck-composer-v2/issues/3)
+**Status:** Accepted (2026-09-14) · **Superseded in part:** token classification, by [ADR-0008](0008-token-set-type-marks-a-token.md) (2026-09-14) · **Ticket:** [#3](https://github.com/mattiasthalen/deck-composer-v2/issues/3)
 
 ## Context
 

@@ -466,3 +466,39 @@ def test_live_collection_request_matches_the_accepted_shape() -> None:
     assert fetched["layout"] in (CARD_LAYOUTS | TOKEN_LAYOUTS)
     assert fetched["legalities"]["commander"] in LEGALITIES
     assert isinstance(project(fetched), Card)
+
+
+# --- ADR-0008: a token set type marks a token whatever the layout ----------
+
+
+def test_role_token_with_flip_layout_in_a_token_set_is_a_token() -> None:
+    role = variant(
+        "Wick, the Whorled Mind",
+        layout="flip",
+        set="twoe",
+        set_type="token",
+        type_line="Token Enchantment — Aura Role // Token Enchantment — Aura Role",
+    )
+    record = project(role)
+    assert isinstance(record, Token)
+    assert record.layout == "flip"
+    assert record.printings[0].set_type == "token"
+
+
+def test_flip_card_in_an_expansion_is_a_card() -> None:
+    record = project(variant("Wick, the Whorled Mind", layout="flip"))
+    assert isinstance(record, Card)
+    assert record.layout == "flip"
+
+
+def test_dungeon_with_normal_layout_in_a_token_set_is_a_token() -> None:
+    dungeon = variant("Wick, the Whorled Mind", set="tafr", set_type="token", type_line="Dungeon")
+    record = project(dungeon)
+    assert isinstance(record, Token)
+    assert record.type_line == "Dungeon"
+
+
+def test_unknown_layout_fails_loudly_even_in_a_token_set() -> None:
+    with pytest.raises(ToolError) as caught:
+        project(variant("Wick, the Whorled Mind", layout="frobnicate", set_type="token"))
+    assert caught.value.error == "layout_unknown"

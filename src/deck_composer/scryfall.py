@@ -41,7 +41,8 @@ RETRY_STATUSES = frozenset({429, 500, 502, 503, 504})
 ATTEMPTS = 2
 
 # R1. A layout in neither set fails with `layout_unknown`; growing either one
-# is a code change.
+# is a code change. A known layout in a set of type `token` is a token whatever
+# the layout says (ADR-0008); see TOKEN_SET_TYPE below.
 CARD_LAYOUTS = frozenset(
     {
         "normal",
@@ -75,6 +76,9 @@ TOKEN_LAYOUTS = frozenset(
         "vanguard",
     }
 )
+# A set whose set_type is `token` holds tokens, emblems, dungeons and helper cards,
+# whatever layout Scryfall gives them (ADR-0008).
+TOKEN_SET_TYPE = "token"
 LEGALITIES = frozenset({"legal", "not_legal", "banned", "restricted"})
 COLORS = frozenset({"W", "U", "B", "R", "G"})
 
@@ -193,17 +197,24 @@ class Client:
 
 
 def project(obj: Mapping[str, Any]) -> Card | Token:
-    """One Scryfall object in, one catalog record out (R6). Classification is by
-    `layout` alone (R1); every required field is checked and every field outside
-    R6 is dropped (R7). `Card.tokens` is left empty here and filled by
-    `project_all`, which sees the token objects fetched alongside."""
+    """One Scryfall object in, one catalog record out (R6). An unknown `layout`
+    fails loudly (R1). A known layout is a token when it is a token layout or
+    when the printing sits in a set whose `set_type` is `token` (ADR-0008):
+    Scryfall prints Role tokens with layout `flip` and dungeons with layout
+    `normal`, both in token sets. Every required field is checked and every
+    field outside R6 is dropped (R7). `Card.tokens` is left empty here and
+    filled by `project_all`, which sees the token objects fetched alongside."""
     identity = _identity(obj)
     layout = _text(obj, "layout", identity)
-    if layout in TOKEN_LAYOUTS:
+    if layout not in TOKEN_LAYOUTS and layout not in CARD_LAYOUTS:
+        raise _layout_unknown(obj, identity, layout)
+    if layout in TOKEN_LAYOUTS or obj.get("set_type") == TOKEN_SET_TYPE:
         return _token(obj, identity, layout)
-    if layout in CARD_LAYOUTS:
-        return _card(obj, identity, layout)
-    raise ToolError(
+    return _card(obj, identity, layout)
+
+
+def _layout_unknown(obj: Mapping[str, Any], identity: dict[str, Any], layout: str) -> ToolError:
+    return ToolError(
         "layout_unknown",
         {
             "layout": layout,
