@@ -9,7 +9,7 @@ Maintenance rules, so the file stays useful:
 - Target size is roughly 20 to 30 entries. Past that, adding one means arguing another out.
 - Record where each entry came from, so a later reader can find the decision behind it.
 
-Entries marked #1 come from the system design interview of 2026-09-14 (issue #1). Entries marked #2 come from the scaffold and ingest design interview of the same day (issue #2).
+Entries marked #1 come from the system design interview of 2026-09-14 (issue #1). Entries marked #2 come from the scaffold and ingest design interview of the same day (issue #2). Entries marked #3 come from the card data design interview of the same day (issue #3); two inherited entries changed there and say so.
 
 | Term | Meaning | Since |
 |---|---|---|
@@ -20,8 +20,8 @@ Entries marked #1 come from the system design interview of 2026-09-14 (issue #1)
 | lot | One export row: a printing with foil, condition, language, binder and quantity. | #1 |
 | printing | One Scryfall ID. | #1 |
 | card | One exact Scryfall name, both faces included for double-faced cards. The unit of singleton and of every deck reference. Physical attributes never matter to composition. | #1 |
-| catalog | Scryfall-derived data for every card the project has seen, owned or not, with owned quantity. Authoritative for card facts. | #1 |
-| collection view | The derived one-line-per-owned-card file the composer reads. Regenerable from the collection and the catalog. | #1 |
+| catalog | Scryfall-derived facts for every card the project has seen, owned or not. Keyed by card, the exact Scryfall name, with the printings seen nested under each card; tokens keyed by oracle_id. Never carries ownership; a union that only grows. Authoritative for card facts. | #1, changed #3 |
+| collection view | The derived one-line-per-owned-card TSV the composer reads, built from the collection and the catalog by every `cards` operation. Regenerable, never committed. | #1, changed #3 |
 | composer | The Claude Code skill that interprets requests, chooses commanders, builds decks against the analyzer, reviews, presents and interviews the owner. | #1 |
 | analyzer | The deterministic tool that returns violations and metrics for a deck or a set of decks. The floor beneath everything the composer asserts. | #1 |
 | violation | A hard-rule failure with a reason. Blocks artifacts. | #1 |
@@ -36,3 +36,7 @@ Entries marked #1 come from the system design interview of 2026-09-14 (issue #1)
 | collection hash | sha256 of the raw export bytes, written into the collection file and copied into table metadata. Identifies an ownership snapshot independent of the collection file's format. | #2 |
 | lot key | Scryfall ID, foil, condition, language, binder name and binder type. The identity the change report diffs on. Added is excluded. | #2 |
 | change report | Ingest output comparing the new collection with the existing collection file by lot key. Never a comparison of two exports. | #2 |
+| token | Anything Scryfall ships that can never be a deck candidate: tokens, double-faced tokens, emblems, art series, planar, scheme and vanguard cards. The Scryfall layout decides. Kept in the catalog's token section, excluded from the collection view; owned when any lot's printing shares its oracle_id. Wider than the game's own meaning. | #3 |
+| enrich | The `cards` operation that fetches only what the catalog lacks for the current collection, never touching an existing entry, and rebuilds the collection view. Restores coverage: every lot's printing is in the catalog. | #3 |
+| refresh | The `cards` operation that re-fetches every catalog entry and reports what changed. Restores freshness. Never automatic. | #3 |
+| resolve | The `cards` operation that turns names into exact Scryfall names, from the catalog first and Scryfall second, reporting each miss with at most one suggestion that is never persisted. | #3 |

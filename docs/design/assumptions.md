@@ -1,6 +1,6 @@
 # Assumptions record
 
-Standing assumptions the design depends on, each with the observation that would show it stopped holding, plus the facts the project has measured. Maintained by design interviews. The system design that produced the first entries is issue #1; the scaffold and ingest interview (issue #2) added A15 to A18 and the second block of measured facts.
+Standing assumptions the design depends on, each with the observation that would show it stopped holding, plus the facts the project has measured. Maintained by design interviews. The system design that produced the first entries is issue #1; the scaffold and ingest interview (issue #2) added A15 to A18 and the second block of measured facts; the card data interview (issue #3) added A19 to A22, sharpened A7 and A15, and added the Scryfall block of measured facts.
 
 An assumption is a statement the design treats as true without the code enforcing it. When one stops holding, every branch that hangs off it needs a second look, so each entry names the observation that would falsify it.
 
@@ -14,18 +14,22 @@ An assumption is a statement the design treats as true without the code enforcin
 | A4 | Basic lands are tracked in the export in real quantities. | Ingest, analyzer | Verified, 223 basics | n/a |
 | A5 | WotC Commander Bracket definitions evolve. | Analyzer | Hedged: rules are versioned data | n/a |
 | A6 | Decks at a table should be balanced against each other. | Composer | Confirmed as a review criterion, not a gate | n/a |
-| A7 | The collection stays within ten times today's size (603 distinct names). | Card data, composer | Holds | The collection view no longer fits in one context window. Use the filter path. |
-| A8 | Tokens and emblems are never deck candidates. | Card data | Confirmed | A format that lists tokens. |
+| A7 | The collection stays within ten times today's size (603 distinct names). | Card data, composer | Holds. The whole collection view (about 130 KB today) is estimated to fit one context window until roughly five times today's size (#3) | The collection view no longer fits in one context window. Use the filter path: grep and awk over the view inside the session. |
+| A8 | Tokens and emblems are never deck candidates. | Card data | Confirmed. The catalog keeps every never-candidate in its token section, classified by Scryfall layout; the view excludes them (#3) | A format that lists tokens. |
 | A9 | Composition identity is the card name; foil and condition are irrelevant. | Data model | Confirmed | Foil-only or condition-aware requests. |
 | A10 | Built decks are handed to other players, so the playbook targets a pilot who has never seen the deck. | Artifacts | Inferred during capture, not confirmed by the owner | The owner says playbooks are for themself only. |
 | A11 | The ManaBox deck import format is: a `// COMMANDER` section, mainboard lines, optional `// SIDEBOARD` and `// MAYBEBOARD` sections, each line `N Name`. | Artifacts | Stated by the owner | A failed import. Verify by hand after every format change. |
 | A12 | "A good match" against given decks means a fair opponent at the table's level, not a hard counter. | Composer | Confirmed by no objection | The owner asks for counters by default. |
-| A13 | Scryfall's `game_changer` flag tracks WotC's Game Changer list. | Analyzer | Field verified present, 2026-09-14 | WotC updates the list and Scryfall lags. The rules file can override. |
+| A13 | Scryfall's `game_changer` flag tracks WotC's Game Changer list. | Analyzer | Field verified present, 2026-09-14. `cards refresh` re-fetches it and reports flips (#3) | WotC updates the list and Scryfall lags. The rules file can override. |
 | A14 | No partner or Background commanders are owned, so the analyzer's commander check handles single commanders only. | Analyzer | Verified against the 2026-08-26 export | A partner or Background card enters the collection. The check is written so adding them is a local change. |
-| A15 | The ManaBox Name column equals the exact Scryfall name. | Ingest, card data | Verified on 869 of 869 rows against Scryfall by ID, 2026-09-14 | Card data reports a lot whose name differs from the catalog name for its Scryfall ID. The collection keeps the exported name; the catalog is authoritative. |
+| A15 | The ManaBox Name column equals the exact Scryfall name. | Ingest, card data | Verified on 869 of 869 rows against Scryfall by ID, 2026-09-14. Enforced at every catalog build since #3: a lot whose name differs from the catalog name for its Scryfall ID fails `cards enrich` with `name_mismatch` | A `name_mismatch` failure, most likely a rename on one side. The collection keeps the exported name; the catalog is authoritative. Resolution path, built only when it fires: a committed alias map from exported name to catalog name, read by card data. |
 | A16 | Every export is the whole collection, never a single binder. | Ingest | Owner practice. ManaBox allows per-binder export; the owner never uses it | A change report showing mass removals. Re-export the whole collection and ingest again. |
 | A17 | Cards placed in ManaBox decks appear in the collection export with Binder Type `deck` and the deck's name as Binder Name. | Ingest, table store, composer | Verified 2026-09-14 on a second export: the deck "Wick, the Whorled Mind" appears as 70 rows of type `deck`; the cards left the binder rows, total cards unchanged | A re-export after creating a ManaBox deck lacks those rows or carries another type. |
 | A18 | The Added timestamp is stable per row across exports. | Ingest | Holds across two exports: 0 of 813 lots present in both changed Added | A re-export whose diff changes Added on otherwise unchanged lots. Then drop the column; the lot key already excludes it. |
+| A19 | One exact Scryfall name maps to one oracle_id among cards with a card layout. | Card data | Holds for every card seen. Enforced at every catalog build: a collision fails `cards enrich` with `name_collision` | A `name_collision` failure. Known offenders: Unstable variants such as Everythingamajig, six different cards under one name, none owned. Resolution then: a disambiguation rule, decided when it happens. |
+| A20 | Scryfall's collection endpoint resolves every owned printing by Scryfall ID and every exact name. | Card data | Verified 676 of 676 printings, 2026-09-14 | A `printing_not_found` failure on an owned lot, typically a printing Scryfall merged or deleted. Re-scan the card in ManaBox and ingest again. |
+| A21 | The Scryfall layout alone decides whether an object can be a deck candidate; set_type is never needed. | Card data | Holds for the 676 owned printings: token layout marks every one of the 34 token printings | A never-candidate arriving with a card layout, or a real card with a token layout. Extend the classification rule. |
+| A22 | Staleness between explicit refreshes is acceptable: legality, the Game Changer flag and edhrec_rank drift only until the owner runs `cards refresh`. | Card data, analyzer | Accepted by the owner, 2026-09-14 | A table built under stale legality, such as a card banned after the last refresh passing the analyzer. Run `cards refresh` before composing when online. |
 
 ## Invalidated
 
@@ -88,3 +92,16 @@ Source: the owner's second export, 2026-09-14, after moving a deck into ManaBox.
 | Change report against the first export | lots added 70, removed 56, quantity changed 14; names added 0, removed 0, quantity changed 0; cards delta 0 |
 | Printings split between the binder and the deck | 14 |
 | Added values on lots present in both exports | unchanged, 813 of 813 |
+
+Source: Scryfall, checked live during the card data interview (issue #3), 2026-09-14.
+
+| Fact | Value |
+|---|---|
+| transform layout (Desperate Farmer // Depraved Harvester) | no top-level `mana_cost`, `colors` or `oracle_text`; each face carries its own. Top-level `type_line` is both faces joined by ` // `, `cmc` and `color_identity` are top-level |
+| prepare layout (Honorbound Page // Forum's Favor, SOS, released 2026-04-24) | top-level `mana_cost` `{3}{W} // {W}` and `colors`, no top-level `oracle_text`; faces carry text. A layout that did not exist a year earlier |
+| token (Splash Lasher, TBLB) | `layout` token, `set_type` token, `legalities.commander` not_legal, `all_parts` links back to the card that makes it. Same name as the card Splash Lasher, different oracle_id |
+| Wick, the Whorled Mind | `all_parts` names its Snail token with component `token`; `color_identity` B, R, U while `colors` is B |
+| `GET /cards/named?exact=` | case-insensitive; a single face name resolves to the full double name |
+| `POST /cards/collection` | accepts `id` and `name` identifiers mixed, up to 75 per request; returns `not_found` per identifier; a `name` identifier resolves a face name to the full name |
+| Bulk files, compressed | oracle_cards 24.6 MB, default_cards 78.2 MB, all_cards 392.9 MB, refreshed daily |
+| `game_changer` | present on cards and tokens as a boolean; `edhrec_rank` absent on tokens and on some cards |
