@@ -2,13 +2,15 @@
 
 Owns the format of ``data/collection.json`` (ADR-0002). Ingest builds a
 ``Collection`` from a ManaBox export; card data and the table store read it
-through this module and never parse the file themselves.
+through this module and never parse the file themselves. Provides ownership
+sums: by name with optional binder exclusion, and by name and binder pair.
 """
 
 from __future__ import annotations
 
 import json
 import os
+from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -103,11 +105,33 @@ class Collection:
         return max(values) if values else None
 
 
-def owned_by_name(collection: Collection) -> dict[str, int]:
-    """Quantity per card name over every lot, all binders included."""
+def owned_by_name(collection: Collection, *, exclude_binders: Iterable[str] = ()) -> dict[str, int]:
+    """Quantity per card name, excluding lots whose binder_name is in the set.
+
+    Omit exclude_binders for all lots; pass an iterable to exclude matching
+    binders regardless of type. A lot is excluded when its binder_name equals
+    one of the excluded names, code-point-exactly (R12).
+    """
+    excluded = set(exclude_binders)
     totals: dict[str, int] = {}
     for lot in collection.lots:
-        totals[lot.name] = totals.get(lot.name, 0) + lot.quantity
+        if lot.binder_name not in excluded:
+            totals[lot.name] = totals.get(lot.name, 0) + lot.quantity
+    return totals
+
+
+def owned_by_binder(collection: Collection) -> dict[str, dict[tuple[str, str], int]]:
+    """Quantity per card name and per (binder_name, binder_type) pair.
+
+    Returns a dictionary mapping each card name to a dictionary mapping
+    (binder_name, binder_type) tuples to quantities. R13 requirement.
+    """
+    totals: dict[str, dict[tuple[str, str], int]] = {}
+    for lot in collection.lots:
+        if lot.name not in totals:
+            totals[lot.name] = {}
+        key = (lot.binder_name, lot.binder_type)
+        totals[lot.name][key] = totals[lot.name].get(key, 0) + lot.quantity
     return totals
 
 

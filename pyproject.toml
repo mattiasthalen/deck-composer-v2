@@ -22,6 +22,8 @@ build-backend = "uv_build"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = ["live: reaches the real Scryfall API; deselected by default"]
+addopts = "-m 'not live'"
 
 [tool.ruff]
 line-length = 100

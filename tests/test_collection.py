@@ -8,7 +8,15 @@ from pathlib import Path
 
 import pytest
 
-from deck_composer.collection import Collection, Lot, owned_by_name, read, render, write
+from deck_composer.collection import (
+    Collection,
+    Lot,
+    owned_by_binder,
+    owned_by_name,
+    read,
+    render,
+    write,
+)
 from deck_composer.errors import ToolError
 from tests.helpers import FIXTURES, GOLDEN
 
@@ -101,3 +109,76 @@ def test_committed_collection_is_price_free() -> None:
     assert "price" not in text.lower()
     collection = read(path)
     assert collection.lots
+
+
+# --- AC-71 to AC-73 (R13 ownership sums) ---
+
+
+def test_ac_71_owned_by_name_with_exclusion() -> None:
+    """AC-71: owned_by_name respects exclude_binders parameter."""
+    collection = Collection(
+        "sha256:0",
+        "x.csv",
+        (
+            lot("Forest", 2, "A"),
+            lot("Forest", 1, "B"),
+        ),
+    )
+    # No exclusion: all 3
+    assert owned_by_name(collection) == {"Forest": 3}
+    # Exclude B: only A's 2
+    assert owned_by_name(collection, exclude_binders=("B",)) == {"Forest": 2}
+    # Exclude both A and B: no Forest key
+    assert owned_by_name(collection, exclude_binders=("A", "B")) == {}
+
+
+def test_ac_72_owned_by_binder() -> None:
+    """AC-72: owned_by_binder returns name -> (binder, type) -> qty mapping."""
+    collection = Collection(
+        "sha256:0",
+        "x.csv",
+        (
+            Lot(
+                name="Forest",
+                set_code="blb",
+                collector_number="1",
+                scryfall_id="x",
+                quantity=2,
+                foil="normal",
+                condition="mint",
+                language="en",
+                binder_name="A",
+                binder_type="binder",
+                added=None,
+            ),
+            Lot(
+                name="Forest",
+                set_code="blb",
+                collector_number="1",
+                scryfall_id="x",
+                quantity=1,
+                foil="normal",
+                condition="mint",
+                language="en",
+                binder_name="B",
+                binder_type="deck",
+                added=None,
+            ),
+        ),
+    )
+    result = owned_by_binder(collection)
+    assert result == {"Forest": {("A", "binder"): 2, ("B", "deck"): 1}}
+
+
+def test_ac_73_owned_by_name_with_nonexistent_binder_exclusion() -> None:
+    """AC-73: owned_by_name ignores exclude_binders naming nonexistent binders."""
+    collection = Collection(
+        "sha256:0",
+        "x.csv",
+        (
+            lot("Forest", 1, "A"),
+            lot("Forest", 1, "B"),
+        ),
+    )
+    # Excluding a binder that doesn't exist returns all lots, no error
+    assert owned_by_name(collection, exclude_binders=("NonExistent",)) == {"Forest": 2}

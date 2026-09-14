@@ -1,0 +1,4742 @@
+{
+ "data": [
+  {
+   "object": "card",
+   "id": "098c86fd-5a38-41fd-be44-ab963448f2a2",
+   "oracle_id": "7bff8d4a-1c7d-48b8-b3e3-737dd6f01823",
+   "multiverse_ids": [
+    677952
+   ],
+   "mtgo_id": 134798,
+   "arena_id": 93662,
+   "tcgplayer_id": 591685,
+   "cardmarket_id": 797875,
+   "name": "Quick Study",
+   "lang": "en",
+   "released_at": "2024-11-15",
+   "uri": "https://api.scryfall.com/cards/098c86fd-5a38-41fd-be44-ab963448f2a2",
+   "scryfall_uri": "https://scryfall.com/card/fdn/513/quick-study?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:16:01Z",
+   "mana_cost": "{2}{U}",
+   "cmc": 3.0,
+   "type_line": "Instant",
+   "oracle_text": "Draw two cards.",
+   "colors": [
+    "U"
+   ],
+   "color_identity": [
+    "U"
+   ],
+   "keywords": [],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "arena",
+    "mtgo"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": false,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0",
+   "set": "fdn",
+   "set_name": "Foundations",
+   "set_type": "core",
+   "set_uri": "https://api.scryfall.com/sets/a7ecb771-d1b6-4dec-8cf5-8d45179f21e0",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Afdn&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/fdn?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/098c86fd-5a38-41fd-be44-ab963448f2a2/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A7bff8d4a-1c7d-48b8-b3e3-737dd6f01823&unique=prints",
+   "collector_number": "513",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "At first, Johann was annoyed that the library had decided to reorganize itself. But he had to admit that storing the cookbooks in the cauldron made a certain kind of sense.",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Iris Compiet",
+   "artist_ids": [
+    "aa807c8c-d07f-4f09-90d3-b2cbf5b86dbf"
+   ],
+   "illustration_id": "60472b4e-e7d7-4065-9b00-8d9cb3dcb821",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false,
+   "promo_types": [
+    "beginnerbox"
+   ],
+   "edhrec_rank": 2651,
+   "penny_rank": 1005
+  },
+  {
+   "object": "card",
+   "id": "0ec488de-fded-4df9-97ed-ba46cbacfdbf",
+   "oracle_id": "60d591f6-6d84-45d2-9d78-a2ef07a3e403",
+   "multiverse_ids": [
+    685935
+   ],
+   "mtgo_id": 135598,
+   "tcgplayer_id": 609922,
+   "cardmarket_id": 805753,
+   "name": "Desperate Farmer // Depraved Harvester",
+   "lang": "en",
+   "released_at": "2025-01-24",
+   "uri": "https://api.scryfall.com/cards/0ec488de-fded-4df9-97ed-ba46cbacfdbf",
+   "scryfall_uri": "https://scryfall.com/card/inr/105/desperate-farmer-depraved-harvester?utm_source=api",
+   "layout": "transform",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:02:29Z",
+   "cmc": 3.0,
+   "type_line": "Creature — Human Peasant // Creature — Human Knight",
+   "color_identity": [
+    "B"
+   ],
+   "keywords": [
+    "Lifelink",
+    "Transform"
+   ],
+   "card_faces": [
+    {
+     "object": "card_face",
+     "name": "Desperate Farmer",
+     "mana_cost": "{2}{B}",
+     "type_line": "Creature — Human Peasant",
+     "oracle_text": "Lifelink\nWhen another creature you control dies, transform this creature.",
+     "colors": [
+      "B"
+     ],
+     "power": "2",
+     "toughness": "2",
+     "flavor_text": "A tragic moment pushed him to a blasphemous act.",
+     "artist": "Valera Lutfullina",
+     "artist_id": "76bc57c7-47c6-40c5-8797-8ffcce430ac7",
+     "illustration_id": "1014b674-3571-4c32-babf-41caacd69bb8"
+    },
+    {
+     "object": "card_face",
+     "name": "Depraved Harvester",
+     "mana_cost": "",
+     "type_line": "Creature — Human Knight",
+     "oracle_text": "Lifelink",
+     "colors": [
+      "B"
+     ],
+     "color_indicator": [
+      "B"
+     ],
+     "power": "4",
+     "toughness": "3",
+     "flavor_text": "Once he'd tasted that dark power, there was no turning back.",
+     "artist": "Valera Lutfullina",
+     "artist_id": "76bc57c7-47c6-40c5-8797-8ffcce430ac7",
+     "illustration_id": "8664f59d-e4f0-419d-b4e2-0706bfbe1862"
+    }
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "not_legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "not_legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "b9618c8c-9f31-4b42-9798-2991893c27bf",
+   "set": "inr",
+   "set_name": "Innistrad Remastered",
+   "set_type": "masters",
+   "set_uri": "https://api.scryfall.com/sets/b9618c8c-9f31-4b42-9798-2991893c27bf",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ainr&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/inr?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/0ec488de-fded-4df9-97ed-ba46cbacfdbf/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A60d591f6-6d84-45d2-9d78-a2ef07a3e403&unique=prints",
+   "collector_number": "105",
+   "digital": false,
+   "rarity": "common",
+   "artist": "Valera Lutfullina",
+   "artist_ids": [
+    "76bc57c7-47c6-40c5-8797-8ffcce430ac7"
+   ],
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 18969
+  },
+  {
+   "object": "card",
+   "id": "1086e826-94b8-4398-8a38-d8eacca56a43",
+   "oracle_id": "367bb252-41e1-4f98-9d22-442dd332cccf",
+   "multiverse_ids": [
+    668938
+   ],
+   "mtgo_id": 129293,
+   "arena_id": 91560,
+   "tcgplayer_id": 558346,
+   "cardmarket_id": 777550,
+   "name": "Parting Gust",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/1086e826-94b8-4398-8a38-d8eacca56a43",
+   "scryfall_uri": "https://scryfall.com/card/blb/24/parting-gust?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:47:38Z",
+   "mana_cost": "{W}{W}",
+   "cmc": 2.0,
+   "type_line": "Instant",
+   "oracle_text": "Gift a tapped Fish (You may promise an opponent a gift as you cast this spell. If you do, they create a tapped 1/1 blue Fish creature token before its other effects.)\nExile target nontoken creature. If the gift wasn't promised, return that card to the battlefield under its owner's control with a +1/+1 counter on it at the beginning of the next end step.",
+   "colors": [
+    "W"
+   ],
+   "color_identity": [
+    "W"
+   ],
+   "keywords": [
+    "Gift"
+   ],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "1086e826-94b8-4398-8a38-d8eacca56a43",
+     "component": "combo_piece",
+     "name": "Parting Gust",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/1086e826-94b8-4398-8a38-d8eacca56a43"
+    },
+    {
+     "object": "related_card",
+     "id": "de0d6700-49f0-4233-97ba-cef7821c30ed",
+     "component": "token",
+     "name": "Fish",
+     "type_line": "Token Creature — Fish",
+     "uri": "https://api.scryfall.com/cards/de0d6700-49f0-4233-97ba-cef7821c30ed"
+    }
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/1086e826-94b8-4398-8a38-d8eacca56a43/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A367bb252-41e1-4f98-9d22-442dd332cccf&unique=prints",
+   "collector_number": "24",
+   "digital": false,
+   "rarity": "uncommon",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Nils Hamm",
+   "artist_ids": [
+    "c540d1fc-1500-457f-93cf-d6069ee66546"
+   ],
+   "illustration_id": "39a45dad-eb19-4807-bcc1-05fb6ab34f14",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 1669,
+   "penny_rank": 820,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "https://magic.wizards.com/en/products/bloomburrow/card-image-gallery",
+    "previewed_at": "2024-07-09"
+   }
+  },
+  {
+   "object": "card",
+   "id": "1129b8cb-6381-4d17-9e45-a61f9558d312",
+   "oracle_id": "6f85342b-b55b-461b-a3dc-17815e02d04d",
+   "multiverse_ids": [],
+   "tcgplayer_id": 91343,
+   "cardmarket_id": 268083,
+   "name": "Fated Intervention",
+   "lang": "en",
+   "released_at": "2014-07-18",
+   "uri": "https://api.scryfall.com/cards/1129b8cb-6381-4d17-9e45-a61f9558d312",
+   "scryfall_uri": "https://scryfall.com/card/cp1/2/fated-intervention?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T10:40:06Z",
+   "mana_cost": "{2}{G}{G}{G}",
+   "cmc": 5.0,
+   "type_line": "Instant",
+   "oracle_text": "Create two 3/3 green Centaur enchantment creature tokens. If it's your turn, scry 2.",
+   "colors": [
+    "G"
+   ],
+   "color_identity": [
+    "G"
+   ],
+   "keywords": [
+    "Scry"
+   ],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "1129b8cb-6381-4d17-9e45-a61f9558d312",
+     "component": "combo_piece",
+     "name": "Fated Intervention",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/1129b8cb-6381-4d17-9e45-a61f9558d312"
+    },
+    {
+     "object": "related_card",
+     "id": "985be507-6125-4db2-b99f-8b61149ffeeb",
+     "component": "token",
+     "name": "Centaur",
+     "type_line": "Token Enchantment Creature — Centaur",
+     "uri": "https://api.scryfall.com/cards/985be507-6125-4db2-b99f-8b61149ffeeb"
+    }
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "not_legal",
+    "timeless": "not_legal",
+    "gladiator": "not_legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "not_legal",
+    "brawl": "not_legal",
+    "competitivebrawl": "not_legal",
+    "alchemy": "not_legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": false,
+   "finishes": [
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "b1736f4e-cb0d-468a-9b4f-b08fb147cc17",
+   "set": "cp1",
+   "set_name": "Magic 2015 Clash Pack",
+   "set_type": "starter",
+   "set_uri": "https://api.scryfall.com/sets/b1736f4e-cb0d-468a-9b4f-b08fb147cc17",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Acp1&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/cp1?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/1129b8cb-6381-4d17-9e45-a61f9558d312/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A6f85342b-b55b-461b-a3dc-17815e02d04d&unique=prints",
+   "collector_number": "2",
+   "digital": false,
+   "rarity": "rare",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Eric Deschamps",
+   "artist_ids": [
+    "37970e22-9cee-44c1-af44-5ee27cf26b76"
+   ],
+   "illustration_id": "851521c3-392d-4804-837f-2021e0006b7e",
+   "border_color": "black",
+   "frame": "2015",
+   "security_stamp": "oval",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false,
+   "edhrec_rank": 26695,
+   "penny_rank": 14736
+  },
+  {
+   "object": "card",
+   "id": "1397f689-dca1-4d35-864b-92c5606afb9a",
+   "oracle_id": "dfc1dc36-0cc2-47cc-b0dd-1cc7c31057aa",
+   "multiverse_ids": [
+    669023
+   ],
+   "mtgo_id": 129463,
+   "arena_id": 91645,
+   "tcgplayer_id": 559768,
+   "cardmarket_id": 778920,
+   "name": "Savor",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/1397f689-dca1-4d35-864b-92c5606afb9a",
+   "scryfall_uri": "https://scryfall.com/card/blb/109/savor?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:47:11Z",
+   "mana_cost": "{1}{B}",
+   "cmc": 2.0,
+   "type_line": "Instant",
+   "oracle_text": "Target creature gets -2/-2 until end of turn. Create a Food token. (It's an artifact with \"{2}, {T}, Sacrifice this token: You gain 3 life.\")",
+   "colors": [
+    "B"
+   ],
+   "color_identity": [
+    "B"
+   ],
+   "keywords": [
+    "Food"
+   ],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "0dce2241-e58b-41d4-b57c-9794fc8ee004",
+     "component": "token",
+     "name": "Food",
+     "type_line": "Token Artifact — Food",
+     "uri": "https://api.scryfall.com/cards/0dce2241-e58b-41d4-b57c-9794fc8ee004"
+    },
+    {
+     "object": "related_card",
+     "id": "1397f689-dca1-4d35-864b-92c5606afb9a",
+     "component": "combo_piece",
+     "name": "Savor",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/1397f689-dca1-4d35-864b-92c5606afb9a"
+    }
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/1397f689-dca1-4d35-864b-92c5606afb9a/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Adfc1dc36-0cc2-47cc-b0dd-1cc7c31057aa&unique=prints",
+   "collector_number": "109",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "Edibility is in the eye of the beholder.",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Kev Walker",
+   "artist_ids": [
+    "f366a0ee-a0cd-466d-ba6a-90058c7a31a6"
+   ],
+   "illustration_id": "999f27c3-b648-4cb0-b27e-7cd707fe9e97",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 8903,
+   "penny_rank": 8545,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "",
+    "previewed_at": "2024-07-18"
+   }
+  },
+  {
+   "object": "card",
+   "id": "29089810-d7fb-4abe-b729-bfabed6aed2b",
+   "oracle_id": "5af729e8-8a40-4991-8270-612e377451de",
+   "multiverse_ids": [
+    669034
+   ],
+   "mtgo_id": 129485,
+   "arena_id": 91656,
+   "tcgplayer_id": 559154,
+   "cardmarket_id": 778355,
+   "name": "Wick, the Whorled Mind",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/29089810-d7fb-4abe-b729-bfabed6aed2b",
+   "scryfall_uri": "https://scryfall.com/card/blb/120/wick-the-whorled-mind?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:47:05Z",
+   "mana_cost": "{3}{B}",
+   "cmc": 4.0,
+   "type_line": "Legendary Creature — Rat Warlock",
+   "oracle_text": "Whenever Wick or another Rat you control enters, create a 1/1 black Snail creature token if you don't control a Snail. Otherwise, put a +1/+1 counter on a Snail you control.\n{U}{B}{R}, Sacrifice a Snail: Wick deals damage equal to the sacrificed creature's power to each opponent. Then draw cards equal to the sacrificed creature's power.",
+   "power": "2",
+   "toughness": "4",
+   "colors": [
+    "B"
+   ],
+   "color_identity": [
+    "B",
+    "R",
+    "U"
+   ],
+   "keywords": [],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "d9bb0a91-b73e-465b-8c0e-50fc28e66fda",
+     "component": "token",
+     "name": "Snail",
+     "type_line": "Token Creature — Snail",
+     "uri": "https://api.scryfall.com/cards/d9bb0a91-b73e-465b-8c0e-50fc28e66fda"
+    },
+    {
+     "object": "related_card",
+     "id": "f43a9d17-2b19-4e17-9b7e-667bf2285950",
+     "component": "combo_piece",
+     "name": "Wick, the Whorled Mind",
+     "type_line": "Legendary Creature — Rat Warlock",
+     "uri": "https://api.scryfall.com/cards/f43a9d17-2b19-4e17-9b7e-667bf2285950"
+    }
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/29089810-d7fb-4abe-b729-bfabed6aed2b/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A5af729e8-8a40-4991-8270-612e377451de&unique=prints",
+   "collector_number": "120",
+   "digital": false,
+   "rarity": "rare",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Andrea Piparo",
+   "artist_ids": [
+    "e8ab9604-1b3c-4bb5-9290-dfb3fd3cf01d"
+   ],
+   "illustration_id": "98cbaac9-caa7-409e-89b8-3d337f63e35a",
+   "border_color": "black",
+   "frame": "2015",
+   "frame_effects": [
+    "legendary"
+   ],
+   "security_stamp": "oval",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 9518,
+   "penny_rank": 12881,
+   "preview": {
+    "source": "Hareruya",
+    "source_uri": "https://article.hareruyamtg.com/article/82060/",
+    "previewed_at": "2024-07-12"
+   }
+  },
+  {
+   "object": "card",
+   "id": "2d4f0bc7-da7c-4749-a24c-b01f3eb5860c",
+   "oracle_id": "7bff8d4a-1c7d-48b8-b3e3-737dd6f01823",
+   "multiverse_ids": [],
+   "resource_id": "B42A8760EABF57212308DA3CF3481155692A41061BFD592E292E76017F2F7BB3",
+   "mtgo_id": 149629,
+   "arena_id": 102524,
+   "tcgplayer_id": 689462,
+   "cardmarket_id": 882989,
+   "name": "Quick Study",
+   "lang": "en",
+   "released_at": "2026-04-24",
+   "uri": "https://api.scryfall.com/cards/2d4f0bc7-da7c-4749-a24c-b01f3eb5860c",
+   "scryfall_uri": "https://scryfall.com/card/sos/65/quick-study?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T00:48:08Z",
+   "mana_cost": "{2}{U}",
+   "cmc": 3.0,
+   "type_line": "Instant",
+   "oracle_text": "Draw two cards.",
+   "colors": [
+    "U"
+   ],
+   "color_identity": [
+    "U"
+   ],
+   "keywords": [],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "e487c9ce-5e76-4756-bcd0-e4b7db5c38a3",
+   "set": "sos",
+   "set_name": "Secrets of Strixhaven",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/e487c9ce-5e76-4756-bcd0-e4b7db5c38a3",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Asos&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/sos?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/2d4f0bc7-da7c-4749-a24c-b01f3eb5860c/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A7bff8d4a-1c7d-48b8-b3e3-737dd6f01823&unique=prints",
+   "collector_number": "65",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "\"Even the most familiar formulae can yield unexpected outcomes.\"\n—Professor Ruxa",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Izzy",
+   "artist_ids": [
+    "2c3d2473-ff5d-4309-8194-e0b2def2ab65"
+   ],
+   "illustration_id": "3fac1698-c8d2-4d57-ac00-891a68a42b19",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false,
+   "edhrec_rank": 2651,
+   "penny_rank": 1005
+  },
+  {
+   "object": "card",
+   "id": "2f815bae-820a-49f6-8eed-46f658e7b6ff",
+   "oracle_id": "077ae62d-ed94-4365-a8b7-97fd99cff028",
+   "multiverse_ids": [
+    669061
+   ],
+   "mtgo_id": 129539,
+   "arena_id": 91683,
+   "tcgplayer_id": 559659,
+   "cardmarket_id": 778533,
+   "name": "Rabid Gnaw",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/2f815bae-820a-49f6-8eed-46f658e7b6ff",
+   "scryfall_uri": "https://scryfall.com/card/blb/147/rabid-gnaw?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:46:59Z",
+   "mana_cost": "{1}{R}",
+   "cmc": 2.0,
+   "type_line": "Instant",
+   "oracle_text": "Target creature you control gets +1/+0 until end of turn. Then it deals damage equal to its power to target creature you don't control.",
+   "colors": [
+    "R"
+   ],
+   "color_identity": [
+    "R"
+   ],
+   "keywords": [],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/2f815bae-820a-49f6-8eed-46f658e7b6ff/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A077ae62d-ed94-4365-a8b7-97fd99cff028&unique=prints",
+   "collector_number": "147",
+   "digital": false,
+   "rarity": "uncommon",
+   "flavor_text": "Unbeknownst to the hosts, the foraged seeds they served at dinner had been touched by a Calamity Beast. The results were ... disturbing.",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Mark Behm",
+   "artist_ids": [
+    "ccf77963-723f-4137-b364-7417079e8ab9"
+   ],
+   "illustration_id": "29ac4220-7379-4e0c-a4c0-64deeead5383",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 8110,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "",
+    "previewed_at": "2024-07-17"
+   }
+  },
+  {
+   "object": "card",
+   "id": "35898b39-98e2-405b-8f18-0e054bd2c29e",
+   "oracle_id": "5e11386f-4667-47f7-b280-eabd927e4a46",
+   "multiverse_ids": [
+    668994
+   ],
+   "mtgo_id": 129405,
+   "arena_id": 91616,
+   "tcgplayer_id": 559053,
+   "cardmarket_id": 778116,
+   "name": "Waterspout Warden",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/35898b39-98e2-405b-8f18-0e054bd2c29e",
+   "scryfall_uri": "https://scryfall.com/card/blb/80/waterspout-warden?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:47:20Z",
+   "mana_cost": "{2}{U}",
+   "cmc": 3.0,
+   "type_line": "Creature — Frog Soldier",
+   "oracle_text": "Whenever this creature attacks, if another creature entered the battlefield under your control this turn, this creature gains flying until end of turn.",
+   "power": "3",
+   "toughness": "2",
+   "colors": [
+    "U"
+   ],
+   "color_identity": [
+    "U"
+   ],
+   "keywords": [],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/35898b39-98e2-405b-8f18-0e054bd2c29e/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A5e11386f-4667-47f7-b280-eabd927e4a46&unique=prints",
+   "collector_number": "80",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "The escape route of many a birdfolk thief has been less surefire than they'd thought.",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "J.P. Targete",
+   "artist_ids": [
+    "75a48ae5-d1d0-4a98-98a8-2ca5fd9e0cd9"
+   ],
+   "illustration_id": "b3426ad5-2267-4452-bc41-2594089d4f06",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 13527,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "",
+    "previewed_at": "2024-07-12"
+   }
+  },
+  {
+   "object": "card",
+   "id": "3663ff0c-d02f-49ac-bb88-6f0dbd684337",
+   "oracle_id": "bc71ebf6-2056-41f7-be35-b2e5c34afa99",
+   "multiverse_ids": [
+    668546
+   ],
+   "mtgo_id": 129789,
+   "arena_id": 91811,
+   "tcgplayer_id": 558419,
+   "cardmarket_id": 777710,
+   "name": "Plains",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/3663ff0c-d02f-49ac-bb88-6f0dbd684337",
+   "scryfall_uri": "https://scryfall.com/card/blb/262/plains?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:46:21Z",
+   "mana_cost": "",
+   "cmc": 0.0,
+   "type_line": "Basic Land — Plains",
+   "oracle_text": "({T}: Add {W}.)",
+   "colors": [],
+   "color_identity": [
+    "W"
+   ],
+   "keywords": [],
+   "produced_mana": [
+    "W"
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "legal",
+    "predh": "legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/3663ff0c-d02f-49ac-bb88-6f0dbd684337/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Abc71ebf6-2056-41f7-be35-b2e5c34afa99&unique=prints",
+   "collector_number": "262",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Carlos Palma Cruchaga",
+   "artist_ids": [
+    "f0c43e1b-1853-4abc-8a1b-d7dda6c1d592"
+   ],
+   "illustration_id": "bfb514f5-a5d2-4c34-ac63-1cfaf7d82212",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": true,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false
+  },
+  {
+   "object": "card",
+   "id": "5030e6ac-211d-4145-8c87-998a8351a467",
+   "oracle_id": "fbf2653e-9cc4-442f-bc73-6e2ba6e067cb",
+   "multiverse_ids": [
+    669007
+   ],
+   "mtgo_id": 129431,
+   "arena_id": 91629,
+   "tcgplayer_id": 558600,
+   "cardmarket_id": 776456,
+   "name": "Early Winter",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/5030e6ac-211d-4145-8c87-998a8351a467",
+   "scryfall_uri": "https://scryfall.com/card/blb/93/early-winter?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:47:15Z",
+   "mana_cost": "{4}{B}",
+   "cmc": 5.0,
+   "type_line": "Instant",
+   "oracle_text": "Choose one —\n• Exile target creature.\n• Target opponent exiles an enchantment they control.",
+   "colors": [
+    "B"
+   ],
+   "color_identity": [
+    "B"
+   ],
+   "keywords": [],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/5030e6ac-211d-4145-8c87-998a8351a467/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Afbf2653e-9cc4-442f-bc73-6e2ba6e067cb&unique=prints",
+   "collector_number": "93",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "The climate changed and the world suffered.",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Andrew Mar",
+   "artist_ids": [
+    "adad79bf-cd52-456a-b170-740ed8bff0fc"
+   ],
+   "illustration_id": "cc7d5fa0-d56b-40ea-b694-9c4df3cfdd44",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 15406,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "https://twitter.com/wizards_magic/status/1806657697900867947/photo/1",
+    "previewed_at": "2024-06-28"
+   }
+  },
+  {
+   "object": "card",
+   "id": "53065735-c427-458e-ade4-ec2d81c8d277",
+   "oracle_id": "1ba44387-3576-428a-8211-ee083a064ad2",
+   "multiverse_ids": [],
+   "name": "Splash Lasher",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/53065735-c427-458e-ade4-ec2d81c8d277",
+   "scryfall_uri": "https://scryfall.com/card/tblb/8/splash-lasher?utm_source=api",
+   "layout": "token",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:29:31Z",
+   "mana_cost": "{3}{U}",
+   "cmc": 4.0,
+   "type_line": "Token Creature — Frog Wizard",
+   "oracle_text": "When this creature enters, tap up to one target creature and put a stun counter on it.\n(This token's mana cost is {3}{U}.)",
+   "power": "1",
+   "toughness": "1",
+   "colors": [
+    "U"
+   ],
+   "color_identity": [
+    "U"
+   ],
+   "keywords": [],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "362ee125-35a0-46cd-a201-e6797d12d33a",
+     "component": "combo_piece",
+     "name": "Splash Lasher",
+     "type_line": "Creature — Frog Wizard",
+     "uri": "https://api.scryfall.com/cards/362ee125-35a0-46cd-a201-e6797d12d33a"
+    },
+    {
+     "object": "related_card",
+     "id": "53065735-c427-458e-ade4-ec2d81c8d277",
+     "component": "token",
+     "name": "Splash Lasher",
+     "type_line": "Token Creature — Frog Wizard",
+     "uri": "https://api.scryfall.com/cards/53065735-c427-458e-ade4-ec2d81c8d277"
+    }
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "not_legal",
+    "timeless": "not_legal",
+    "gladiator": "not_legal",
+    "pioneer": "not_legal",
+    "modern": "not_legal",
+    "legacy": "not_legal",
+    "pauper": "not_legal",
+    "vintage": "not_legal",
+    "penny": "not_legal",
+    "commander": "not_legal",
+    "oathbreaker": "not_legal",
+    "standardbrawl": "not_legal",
+    "brawl": "not_legal",
+    "competitivebrawl": "not_legal",
+    "alchemy": "not_legal",
+    "paupercommander": "not_legal",
+    "duel": "not_legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set": "tblb",
+   "set_name": "Bloomburrow Tokens",
+   "set_type": "token",
+   "set_uri": "https://api.scryfall.com/sets/98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atblb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/tblb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/53065735-c427-458e-ade4-ec2d81c8d277/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A1ba44387-3576-428a-8211-ee083a064ad2&unique=prints",
+   "collector_number": "8",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Izzy",
+   "artist_ids": [
+    "2c3d2473-ff5d-4309-8194-e0b2def2ab65"
+   ],
+   "illustration_id": "e530b25a-610f-42de-94a8-c57360206c72",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false
+  },
+  {
+   "object": "card",
+   "id": "58706bd8-558a-43b9-9f1e-c1ff0044203b",
+   "oracle_id": "b0747a4f-d041-4750-aef5-a5d101696f65",
+   "multiverse_ids": [
+    669087
+   ],
+   "mtgo_id": 129591,
+   "arena_id": 91709,
+   "tcgplayer_id": 558693,
+   "cardmarket_id": 777777,
+   "name": "Galewind Moose",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/58706bd8-558a-43b9-9f1e-c1ff0044203b",
+   "scryfall_uri": "https://scryfall.com/card/blb/173/galewind-moose?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:46:50Z",
+   "mana_cost": "{4}{G}{G}",
+   "cmc": 6.0,
+   "type_line": "Creature — Elemental Elk",
+   "oracle_text": "Flash\nReach, vigilance, trample",
+   "power": "6",
+   "toughness": "6",
+   "colors": [
+    "G"
+   ],
+   "color_identity": [
+    "G"
+   ],
+   "keywords": [
+    "Reach",
+    "Vigilance",
+    "Trample",
+    "Flash"
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/58706bd8-558a-43b9-9f1e-c1ff0044203b/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ab0747a4f-d041-4750-aef5-a5d101696f65&unique=prints",
+   "collector_number": "173",
+   "digital": false,
+   "rarity": "uncommon",
+   "flavor_text": "\"Something has stirred the Calamity Beasts, and they are wreaking havoc. Anyone who wishes to help, come forth! Whether it's with your swords in the fight or your shovels in the field, join me!\"\n—Mabel, heir to Cragflame",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Valera Lutfullina",
+   "artist_ids": [
+    "76bc57c7-47c6-40c5-8797-8ffcce430ac7"
+   ],
+   "illustration_id": "ce1f57f2-3778-47c0-9f28-0a889aa33fbf",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 11915,
+   "penny_rank": 10756,
+   "preview": {
+    "source": "Anna Margaret",
+    "source_uri": "https://x.com/itsannamargaret/status/1811153920657387742",
+    "previewed_at": "2024-07-10"
+   }
+  },
+  {
+   "object": "card",
+   "id": "6d963080-b3ec-467d-82f7-39db6ecd6bbc",
+   "oracle_id": "ac7d1986-8388-4e4c-973e-d90382b12acf",
+   "multiverse_ids": [
+    669065
+   ],
+   "mtgo_id": 129547,
+   "arena_id": 91687,
+   "tcgplayer_id": 559766,
+   "cardmarket_id": 778917,
+   "name": "Sazacap's Brew",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/6d963080-b3ec-467d-82f7-39db6ecd6bbc",
+   "scryfall_uri": "https://scryfall.com/card/blb/151/sazacaps-brew?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:46:55Z",
+   "mana_cost": "{1}{R}",
+   "cmc": 2.0,
+   "type_line": "Instant",
+   "oracle_text": "Gift a tapped Fish (You may promise an opponent a gift as you cast this spell. If you do, they create a tapped 1/1 blue Fish creature token before its other effects.)\nAs an additional cost to cast this spell, discard a card.\nTarget player draws two cards. If the gift was promised, target creature you control gets +2/+0 until end of turn.",
+   "colors": [
+    "R"
+   ],
+   "color_identity": [
+    "R"
+   ],
+   "keywords": [
+    "Gift"
+   ],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "6d963080-b3ec-467d-82f7-39db6ecd6bbc",
+     "component": "combo_piece",
+     "name": "Sazacap's Brew",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/6d963080-b3ec-467d-82f7-39db6ecd6bbc"
+    },
+    {
+     "object": "related_card",
+     "id": "de0d6700-49f0-4233-97ba-cef7821c30ed",
+     "component": "token",
+     "name": "Fish",
+     "type_line": "Token Creature — Fish",
+     "uri": "https://api.scryfall.com/cards/de0d6700-49f0-4233-97ba-cef7821c30ed"
+    }
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/6d963080-b3ec-467d-82f7-39db6ecd6bbc/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Aac7d1986-8388-4e4c-973e-d90382b12acf&unique=prints",
+   "collector_number": "151",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Sam Guay",
+   "artist_ids": [
+    "2409a097-87a3-486f-9d16-c69217e264c6"
+   ],
+   "illustration_id": "ec2f718e-50cd-45dc-acdd-d90b9dd5d965",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 3929,
+   "penny_rank": 3308,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "",
+    "previewed_at": "2024-07-18"
+   }
+  },
+  {
+   "object": "card",
+   "id": "79a70863-860f-4a7b-9cb2-d3546b689d44",
+   "oracle_id": "66ee56b9-aca8-4efa-b9b5-50717e0784a7",
+   "multiverse_ids": [],
+   "resource_id": "9693424D5C587A77798F2A6C078E916B572D9DC3FC40D88304BF3F5FBEE3EA52",
+   "mtgo_id": 149537,
+   "arena_id": 102478,
+   "tcgplayer_id": 689451,
+   "cardmarket_id": 882979,
+   "name": "Honorbound Page // Forum's Favor",
+   "lang": "en",
+   "released_at": "2026-04-24",
+   "uri": "https://api.scryfall.com/cards/79a70863-860f-4a7b-9cb2-d3546b689d44",
+   "scryfall_uri": "https://scryfall.com/card/sos/19/honorbound-page-forums-favor?utm_source=api",
+   "layout": "prepare",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T00:48:24Z",
+   "mana_cost": "{3}{W} // {W}",
+   "cmc": 4.0,
+   "type_line": "Creature — Cat Cleric // Sorcery",
+   "power": "3",
+   "toughness": "3",
+   "colors": [
+    "W"
+   ],
+   "color_identity": [
+    "W"
+   ],
+   "keywords": [
+    "First strike",
+    "Prepared"
+   ],
+   "card_faces": [
+    {
+     "object": "card_face",
+     "name": "Honorbound Page",
+     "mana_cost": "{3}{W}",
+     "type_line": "Creature — Cat Cleric",
+     "oracle_text": "First strike\nThis creature enters prepared. (While it's prepared, you may cast a copy of its spell. Doing so unprepares it.)",
+     "power": "3",
+     "toughness": "3",
+     "artist": "Paolo Parente",
+     "artist_id": "d48dd097-720d-476a-8722-6a02854ae28b",
+     "illustration_id": "9bd74e27-e0c9-4c17-82d5-3f1f0703cfc1"
+    },
+    {
+     "object": "card_face",
+     "name": "Forum's Favor",
+     "mana_cost": "{W}",
+     "type_line": "Sorcery",
+     "oracle_text": "Target creature gets +1/+0 and gains flying until end of turn.",
+     "artist": "Paolo Parente",
+     "artist_id": "d48dd097-720d-476a-8722-6a02854ae28b"
+    }
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "e487c9ce-5e76-4756-bcd0-e4b7db5c38a3",
+   "set": "sos",
+   "set_name": "Secrets of Strixhaven",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/e487c9ce-5e76-4756-bcd0-e4b7db5c38a3",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Asos&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/sos?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/79a70863-860f-4a7b-9cb2-d3546b689d44/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A66ee56b9-aca8-4efa-b9b5-50717e0784a7&unique=prints",
+   "collector_number": "19",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Paolo Parente",
+   "artist_ids": [
+    "d48dd097-720d-476a-8722-6a02854ae28b"
+   ],
+   "illustration_id": "9bd74e27-e0c9-4c17-82d5-3f1f0703cfc1",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false,
+   "edhrec_rank": 22870
+  },
+  {
+   "object": "card",
+   "id": "882b348c-076b-41d8-b505-063480636669",
+   "oracle_id": "1cb0610b-a731-42c2-b93f-0a29f63cebf4",
+   "multiverse_ids": [
+    679952
+   ],
+   "mtgo_id": 133446,
+   "arena_id": 93923,
+   "tcgplayer_id": 591840,
+   "cardmarket_id": 797363,
+   "name": "Thrill of Possibility",
+   "lang": "en",
+   "released_at": "2024-11-15",
+   "uri": "https://api.scryfall.com/cards/882b348c-076b-41d8-b505-063480636669",
+   "scryfall_uri": "https://scryfall.com/card/fdn/210/thrill-of-possibility?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:17:42Z",
+   "mana_cost": "{1}{R}",
+   "cmc": 2.0,
+   "type_line": "Instant",
+   "oracle_text": "As an additional cost to cast this spell, discard a card.\nDraw two cards.",
+   "colors": [
+    "R"
+   ],
+   "color_identity": [
+    "R"
+   ],
+   "keywords": [],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "arena",
+    "mtgo"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0",
+   "set": "fdn",
+   "set_name": "Foundations",
+   "set_type": "core",
+   "set_uri": "https://api.scryfall.com/sets/a7ecb771-d1b6-4dec-8cf5-8d45179f21e0",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Afdn&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/fdn?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/882b348c-076b-41d8-b505-063480636669/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A1cb0610b-a731-42c2-b93f-0a29f63cebf4&unique=prints",
+   "collector_number": "210",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "\"Remember all the great heroes who were careful and never did anything risky? Me neither.\"\n—Syr Carah, the Bold",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Steve Argyle",
+   "artist_ids": [
+    "a44ddda4-5331-4f83-aac9-3e00ed36bd7b"
+   ],
+   "illustration_id": "5c85ce5d-aa1b-4458-bd2c-7e9553cf9b06",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "promo_types": [
+    "startercollection"
+   ],
+   "edhrec_rank": 211,
+   "penny_rank": 1274
+  },
+  {
+   "object": "card",
+   "id": "8ab9d56f-9178-4ec9-a5f6-b934f50d8d9d",
+   "oracle_id": "b6c7c708-5212-4100-b954-b77855b27915",
+   "multiverse_ids": [
+    669170
+   ],
+   "mtgo_id": 129757,
+   "arena_id": 91792,
+   "tcgplayer_id": 558607,
+   "cardmarket_id": 776461,
+   "name": "Lupinflower Village",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/8ab9d56f-9178-4ec9-a5f6-b934f50d8d9d",
+   "scryfall_uri": "https://scryfall.com/card/blb/256/lupinflower-village?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:46:24Z",
+   "mana_cost": "",
+   "cmc": 0.0,
+   "type_line": "Land",
+   "oracle_text": "{T}: Add {C}.\n{T}: Add {W}. Spend this mana only to cast a creature spell.\n{1}{W}, {T}, Sacrifice this land: Look at the top six cards of your library. You may reveal a Bat, Bird, Mouse, or Rabbit card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
+   "colors": [],
+   "color_identity": [
+    "W"
+   ],
+   "keywords": [],
+   "produced_mana": [
+    "C",
+    "W"
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/8ab9d56f-9178-4ec9-a5f6-b934f50d8d9d/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ab6c7c708-5212-4100-b954-b77855b27915&unique=prints",
+   "collector_number": "256",
+   "digital": false,
+   "rarity": "uncommon",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Alayna Danner",
+   "artist_ids": [
+    "bb677b1a-ce51-4888-83d6-5a94de461ff9"
+   ],
+   "illustration_id": "04cc1071-4cf4-4e04-ba43-3d35604dce80",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 4823,
+   "penny_rank": 6431
+  },
+  {
+   "object": "card",
+   "id": "b6178258-1ad6-4122-a56f-6eb7d0611e84",
+   "oracle_id": "5b919920-b1b6-499b-a7fe-c630778a7831",
+   "multiverse_ids": [
+    669073
+   ],
+   "mtgo_id": 129563,
+   "arena_id": 91699,
+   "tcgplayer_id": 558710,
+   "cardmarket_id": 777786,
+   "name": "Valley Rally",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/b6178258-1ad6-4122-a56f-6eb7d0611e84",
+   "scryfall_uri": "https://scryfall.com/card/blb/159/valley-rally?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:46:54Z",
+   "mana_cost": "{2}{R}",
+   "cmc": 3.0,
+   "type_line": "Instant",
+   "oracle_text": "Gift a Food (You may promise an opponent a gift as you cast this spell. If you do, they create a Food token before its other effects. It's an artifact with \"{2}, {T}, Sacrifice this token: You gain 3 life.\")\nCreatures you control get +2/+0 until end of turn. If the gift was promised, target creature you control gains first strike until end of turn.",
+   "colors": [
+    "R"
+   ],
+   "color_identity": [
+    "R"
+   ],
+   "keywords": [
+    "Gift",
+    "Food"
+   ],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "b6178258-1ad6-4122-a56f-6eb7d0611e84",
+     "component": "combo_piece",
+     "name": "Valley Rally",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/b6178258-1ad6-4122-a56f-6eb7d0611e84"
+    },
+    {
+     "object": "related_card",
+     "id": "0dce2241-e58b-41d4-b57c-9794fc8ee004",
+     "component": "token",
+     "name": "Food",
+     "type_line": "Token Artifact — Food",
+     "uri": "https://api.scryfall.com/cards/0dce2241-e58b-41d4-b57c-9794fc8ee004"
+    }
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "not_legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/b6178258-1ad6-4122-a56f-6eb7d0611e84/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A5b919920-b1b6-499b-a7fe-c630778a7831&unique=prints",
+   "collector_number": "159",
+   "digital": false,
+   "rarity": "uncommon",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Sidharth Chaturvedi",
+   "artist_ids": [
+    "55e6d846-2f73-4fba-9b88-441686bb8dcb"
+   ],
+   "illustration_id": "a0ee9997-a116-4100-97ae-0056fc3d7309",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": true,
+   "edhrec_rank": 13273,
+   "preview": {
+    "source": "Lords of Limited",
+    "source_uri": "https://x.com/LordsofLimited/status/1811060983244173580",
+    "previewed_at": "2024-07-10"
+   }
+  },
+  {
+   "object": "card",
+   "id": "ba629ca8-a368-4282-8a61-9bf6a5c217f0",
+   "oracle_id": "81c509b2-3164-47e9-94b3-bdba0487d2f1",
+   "multiverse_ids": [
+    668950
+   ],
+   "mtgo_id": 129317,
+   "arena_id": 91572,
+   "tcgplayer_id": 558357,
+   "cardmarket_id": 777554,
+   "name": "Valley Questcaller",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/ba629ca8-a368-4282-8a61-9bf6a5c217f0",
+   "scryfall_uri": "https://scryfall.com/card/blb/36/valley-questcaller?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:47:35Z",
+   "mana_cost": "{1}{W}",
+   "cmc": 2.0,
+   "type_line": "Creature — Rabbit Warrior",
+   "oracle_text": "Whenever one or more other Rabbits, Bats, Birds, and/or Mice you control enter, scry 1.\nOther Rabbits, Bats, Birds, and Mice you control get +1/+1.",
+   "power": "2",
+   "toughness": "3",
+   "colors": [
+    "W"
+   ],
+   "color_identity": [
+    "W"
+   ],
+   "keywords": [
+    "Scry"
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/ba629ca8-a368-4282-8a61-9bf6a5c217f0/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A81c509b2-3164-47e9-94b3-bdba0487d2f1&unique=prints",
+   "collector_number": "36",
+   "digital": false,
+   "rarity": "rare",
+   "flavor_text": "No battle is fought, or won, alone.",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Steve Prescott",
+   "artist_ids": [
+    "a1139fb8-41f5-4a9e-9a74-f662e1a23b35"
+   ],
+   "illustration_id": "a0073d0c-015b-47f6-8f97-67eec9324901",
+   "border_color": "black",
+   "frame": "2015",
+   "security_stamp": "oval",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 5133,
+   "penny_rank": 7055,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "https://magic.wizards.com/en/products/bloomburrow/card-image-gallery",
+    "previewed_at": "2024-07-09"
+   }
+  },
+  {
+   "object": "card",
+   "id": "c96b01f5-83de-4237-a68d-f946c53e31a6",
+   "oracle_id": "23878990-dcbd-4a2a-b4f7-ee7edb396c71",
+   "multiverse_ids": [
+    669104
+   ],
+   "mtgo_id": 129625,
+   "arena_id": 91726,
+   "tcgplayer_id": 559122,
+   "cardmarket_id": 778357,
+   "name": "Rust-Shield Rampager",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/c96b01f5-83de-4237-a68d-f946c53e31a6",
+   "scryfall_uri": "https://scryfall.com/card/blb/190/rust-shield-rampager?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:46:46Z",
+   "mana_cost": "{3}{G}",
+   "cmc": 4.0,
+   "type_line": "Creature — Raccoon Warrior",
+   "oracle_text": "Offspring {2} (You may pay an additional {2} as you cast this spell. If you do, when this creature enters, create a 1/1 token copy of it.)\nThis creature can't be blocked by creatures with power 2 or less.",
+   "power": "4",
+   "toughness": "4",
+   "colors": [
+    "G"
+   ],
+   "color_identity": [
+    "G"
+   ],
+   "keywords": [
+    "Offspring"
+   ],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "c96b01f5-83de-4237-a68d-f946c53e31a6",
+     "component": "combo_piece",
+     "name": "Rust-Shield Rampager",
+     "type_line": "Creature — Raccoon Warrior",
+     "uri": "https://api.scryfall.com/cards/c96b01f5-83de-4237-a68d-f946c53e31a6"
+    },
+    {
+     "object": "related_card",
+     "id": "e2dd6325-e3d8-4816-ac52-8838c12b4922",
+     "component": "token",
+     "name": "Rust-Shield Rampager",
+     "type_line": "Token Creature — Raccoon Warrior",
+     "uri": "https://api.scryfall.com/cards/e2dd6325-e3d8-4816-ac52-8838c12b4922"
+    }
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/c96b01f5-83de-4237-a68d-f946c53e31a6/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A23878990-dcbd-4a2a-b4f7-ee7edb396c71&unique=prints",
+   "collector_number": "190",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Ralph Horsley",
+   "artist_ids": [
+    "a51444a8-eb4b-4615-a663-d1d418591ccb"
+   ],
+   "illustration_id": "5d52605d-ae5d-46fd-ab65-5629d9502d68",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 13799,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "",
+    "previewed_at": "2024-07-15"
+   }
+  },
+  {
+   "object": "card",
+   "id": "ca543405-5e12-48a0-9a77-082ac9bcb2f2",
+   "oracle_id": "63686c6b-9051-4002-aa8e-da8a3021330f",
+   "multiverse_ids": [
+    668934
+   ],
+   "mtgo_id": 129285,
+   "arena_id": 91556,
+   "tcgplayer_id": 558686,
+   "cardmarket_id": 777768,
+   "name": "Lifecreed Duo",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/ca543405-5e12-48a0-9a77-082ac9bcb2f2",
+   "scryfall_uri": "https://scryfall.com/card/blb/20/lifecreed-duo?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:47:41Z",
+   "mana_cost": "{1}{W}",
+   "cmc": 2.0,
+   "type_line": "Creature — Bat Bird",
+   "oracle_text": "Flying\nWhenever another creature you control enters, you gain 1 life.",
+   "power": "1",
+   "toughness": "2",
+   "colors": [
+    "W"
+   ],
+   "color_identity": [
+    "W"
+   ],
+   "keywords": [
+    "Flying"
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/ca543405-5e12-48a0-9a77-082ac9bcb2f2/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A63686c6b-9051-4002-aa8e-da8a3021330f&unique=prints",
+   "collector_number": "20",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "\"Why are you eating upside down?\" asked the bird. \"Why are you eating upside up?\" replied the bat.",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Lorenzo Mastroianni",
+   "artist_ids": [
+    "70213e7d-47e0-4543-a1ae-451009053e2d"
+   ],
+   "illustration_id": "e5dc0c09-f3f9-4b72-9488-024ee3e2a5ff",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 3805,
+   "penny_rank": 3235,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "",
+    "previewed_at": "2024-07-11"
+   }
+  },
+  {
+   "object": "card",
+   "id": "d232fcc2-12f6-401a-b1aa-ddff11cb9378",
+   "oracle_id": "b34bb2dc-c1af-4d77-b0b3-a0fb342a5fc6",
+   "multiverse_ids": [
+    677869
+   ],
+   "mtgo_id": 133852,
+   "arena_id": 95199,
+   "tcgplayer_id": 589311,
+   "cardmarket_id": 795145,
+   "name": "Forest",
+   "lang": "en",
+   "released_at": "2024-11-15",
+   "uri": "https://api.scryfall.com/cards/d232fcc2-12f6-401a-b1aa-ddff11cb9378",
+   "scryfall_uri": "https://scryfall.com/card/fdn/280/forest?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:17:19Z",
+   "mana_cost": "",
+   "cmc": 0.0,
+   "type_line": "Basic Land — Forest",
+   "oracle_text": "({T}: Add {G}.)",
+   "colors": [],
+   "color_identity": [
+    "G"
+   ],
+   "keywords": [],
+   "produced_mana": [
+    "G"
+   ],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "117ab60a-b888-4585-b0c6-769d387069f7",
+     "component": "combo_piece",
+     "name": "Forest",
+     "type_line": "Basic Land — Forest",
+     "uri": "https://api.scryfall.com/cards/117ab60a-b888-4585-b0c6-769d387069f7"
+    },
+    {
+     "object": "related_card",
+     "id": "aed8ae06-ae54-4a16-8830-6547164ce6ae",
+     "component": "combo_piece",
+     "name": "Gilt-Leaf Alchemist",
+     "type_line": "Creature — Elf Druid",
+     "uri": "https://api.scryfall.com/cards/aed8ae06-ae54-4a16-8830-6547164ce6ae"
+    }
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "legal",
+    "predh": "legal",
+    "tlr": "legal"
+   },
+   "games": [
+    "paper",
+    "arena",
+    "mtgo"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0",
+   "set": "fdn",
+   "set_name": "Foundations",
+   "set_type": "core",
+   "set_uri": "https://api.scryfall.com/sets/a7ecb771-d1b6-4dec-8cf5-8d45179f21e0",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Afdn&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/fdn?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/d232fcc2-12f6-401a-b1aa-ddff11cb9378/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ab34bb2dc-c1af-4d77-b0b3-a0fb342a5fc6&unique=prints",
+   "collector_number": "280",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Rebecca Guay",
+   "artist_ids": [
+    "f8f662fa-d597-46a3-afb2-91d6e13243e2"
+   ],
+   "illustration_id": "9d8d1329-0e61-41a4-abc2-2d7e334e1188",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "promo_types": [
+    "beginnerbox",
+    "startercollection"
+   ]
+  },
+  {
+   "object": "card",
+   "id": "d90ea719-5320-46c6-a347-161853a14776",
+   "oracle_id": "426dbe89-0cbb-4a3b-8812-d9761d063373",
+   "multiverse_ids": [
+    668953
+   ],
+   "mtgo_id": 129323,
+   "arena_id": 91575,
+   "tcgplayer_id": 559047,
+   "cardmarket_id": 778104,
+   "name": "Wax-Wane Witness",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/d90ea719-5320-46c6-a347-161853a14776",
+   "scryfall_uri": "https://scryfall.com/card/blb/39/wax-wane-witness?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:47:33Z",
+   "mana_cost": "{3}{W}",
+   "cmc": 4.0,
+   "type_line": "Creature — Bat Cleric",
+   "oracle_text": "Flying, vigilance\nWhenever you gain or lose life during your turn, this creature gets +1/+0 until end of turn.",
+   "power": "2",
+   "toughness": "4",
+   "colors": [
+    "W"
+   ],
+   "color_identity": [
+    "W"
+   ],
+   "keywords": [
+    "Flying",
+    "Vigilance"
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/d90ea719-5320-46c6-a347-161853a14776/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A426dbe89-0cbb-4a3b-8812-d9761d063373&unique=prints",
+   "collector_number": "39",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "Batfolk clerics consider the cycle of light and darkness as a sacred allegory of life and death.",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Mila Pesic",
+   "artist_ids": [
+    "81c5ec23-220b-4efa-b7df-9e49dd371e8d"
+   ],
+   "illustration_id": "663d28e3-dfb6-463b-9d88-7da022aeac40",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 13581,
+   "penny_rank": 12507,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "",
+    "previewed_at": "2024-07-12"
+   }
+  },
+  {
+   "object": "card",
+   "id": "dfbd7c65-ebe5-47a6-8d2f-9a8c63a30a7b",
+   "oracle_id": "bec585af-0c59-46a7-838f-d747c80a9e97",
+   "multiverse_ids": [
+    373740
+   ],
+   "mtgo_id": 50402,
+   "mtgo_foil_id": 50403,
+   "tcgplayer_id": 71177,
+   "cardmarket_id": 264104,
+   "name": "Arbor Colossus",
+   "lang": "en",
+   "released_at": "2013-09-27",
+   "uri": "https://api.scryfall.com/cards/dfbd7c65-ebe5-47a6-8d2f-9a8c63a30a7b",
+   "scryfall_uri": "https://scryfall.com/card/ths/150/arbor-colossus?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T10:49:09Z",
+   "mana_cost": "{2}{G}{G}{G}",
+   "cmc": 5.0,
+   "type_line": "Creature — Giant",
+   "oracle_text": "Reach\n{3}{G}{G}{G}: Monstrosity 3. (If this creature isn't monstrous, put three +1/+1 counters on it and it becomes monstrous.)\nWhen this creature becomes monstrous, destroy target creature with flying an opponent controls.",
+   "power": "6",
+   "toughness": "6",
+   "colors": [
+    "G"
+   ],
+   "color_identity": [
+    "G"
+   ],
+   "keywords": [
+    "Reach",
+    "Monstrosity"
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "not_legal",
+    "timeless": "not_legal",
+    "gladiator": "not_legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "not_legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "not_legal",
+    "brawl": "not_legal",
+    "competitivebrawl": "not_legal",
+    "alchemy": "not_legal",
+    "paupercommander": "not_legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper",
+    "mtgo"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "69093d6f-e25a-41a4-8cf5-688d7f11c0fb",
+   "set": "ths",
+   "set_name": "Theros",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/69093d6f-e25a-41a4-8cf5-688d7f11c0fb",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aths&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/ths?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/dfbd7c65-ebe5-47a6-8d2f-9a8c63a30a7b/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Abec585af-0c59-46a7-838f-d747c80a9e97&unique=prints",
+   "collector_number": "150",
+   "digital": false,
+   "rarity": "rare",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Jaime Jones",
+   "artist_ids": [
+    "92f6c2c1-fa57-4b52-99c4-0fd866c13dc9"
+   ],
+   "illustration_id": "97d800a2-93c2-4b52-a6b3-1bf3740ce55c",
+   "border_color": "black",
+   "frame": "2003",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 20188,
+   "penny_rank": 8569
+  },
+  {
+   "object": "card",
+   "id": "f3684577-51ce-490e-9b59-b19c733be466",
+   "oracle_id": "e2f57e48-ff5b-4a42-9b7c-1bd23b0d78ed",
+   "multiverse_ids": [
+    669146
+   ],
+   "mtgo_id": 129709,
+   "arena_id": 91768,
+   "tcgplayer_id": 558427,
+   "cardmarket_id": 777701,
+   "name": "Seedpod Squire",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/f3684577-51ce-490e-9b59-b19c733be466",
+   "scryfall_uri": "https://scryfall.com/card/blb/232/seedpod-squire?utm_source=api",
+   "layout": "normal",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:46:31Z",
+   "mana_cost": "{3}{W/U}",
+   "cmc": 4.0,
+   "type_line": "Creature — Bird Scout",
+   "oracle_text": "Flying\nWhenever this creature attacks, target creature you control without flying gets +1/+1 until end of turn.",
+   "power": "3",
+   "toughness": "3",
+   "colors": [
+    "U",
+    "W"
+   ],
+   "color_identity": [
+    "U",
+    "W"
+   ],
+   "keywords": [
+    "Flying"
+   ],
+   "legalities": {
+    "standard": "legal",
+    "future": "legal",
+    "historic": "legal",
+    "timeless": "legal",
+    "gladiator": "legal",
+    "pioneer": "legal",
+    "modern": "legal",
+    "legacy": "legal",
+    "pauper": "legal",
+    "vintage": "legal",
+    "penny": "legal",
+    "commander": "legal",
+    "oathbreaker": "legal",
+    "standardbrawl": "legal",
+    "brawl": "legal",
+    "competitivebrawl": "legal",
+    "alchemy": "legal",
+    "paupercommander": "legal",
+    "duel": "legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper",
+    "mtgo",
+    "arena"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "a2f58272-bba6-439d-871e-7a46686ac018",
+   "set": "blb",
+   "set_name": "Bloomburrow",
+   "set_type": "expansion",
+   "set_uri": "https://api.scryfall.com/sets/a2f58272-bba6-439d-871e-7a46686ac018",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ablb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/blb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/f3684577-51ce-490e-9b59-b19c733be466/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ae2f57e48-ff5b-4a42-9b7c-1bd23b0d78ed&unique=prints",
+   "collector_number": "232",
+   "digital": false,
+   "rarity": "common",
+   "flavor_text": "\"If you think he's loud now, wait until he starts the battle song.\"\n—Clement, pessimistic adventurer",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Christina Kraus",
+   "artist_ids": [
+    "685354c3-302d-486a-b575-cb19bb2c31c9"
+   ],
+   "illustration_id": "9b5116a7-8a8f-499d-bc6c-531025f0ec51",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "edhrec_rank": 20870,
+   "preview": {
+    "source": "Wizards of the Coast",
+    "source_uri": "https://magic.wizards.com/en/products/bloomburrow/card-image-gallery",
+    "previewed_at": "2024-07-09"
+   }
+  },
+  {
+   "object": "card",
+   "id": "0dce2241-e58b-41d4-b57c-9794fc8ee004",
+   "oracle_id": "a468338f-635e-4206-89d6-72d723071d45",
+   "multiverse_ids": [],
+   "name": "Food",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/0dce2241-e58b-41d4-b57c-9794fc8ee004",
+   "scryfall_uri": "https://scryfall.com/card/tblb/27/food?utm_source=api",
+   "layout": "token",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:29:23Z",
+   "mana_cost": "",
+   "cmc": 0.0,
+   "type_line": "Token Artifact — Food",
+   "oracle_text": "{2}, {T}, Sacrifice this token: You gain 3 life.",
+   "colors": [],
+   "color_identity": [],
+   "keywords": [],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "2cfd365e-34d1-4224-b925-119000311934",
+     "component": "combo_piece",
+     "name": "Greta, Sweettooth Scourge",
+     "type_line": "Legendary Creature — Human Warrior",
+     "uri": "https://api.scryfall.com/cards/2cfd365e-34d1-4224-b925-119000311934"
+    },
+    {
+     "object": "related_card",
+     "id": "b38c9e49-4859-4783-a6bf-49ac1e81aee3",
+     "component": "combo_piece",
+     "name": "Spider-Ham, Peter Porker",
+     "type_line": "Legendary Creature — Spider Boar Hero",
+     "uri": "https://api.scryfall.com/cards/b38c9e49-4859-4783-a6bf-49ac1e81aee3"
+    },
+    {
+     "object": "related_card",
+     "id": "53f5f704-2265-42bb-bff5-fd9d85bc2bfb",
+     "component": "combo_piece",
+     "name": "Courier of Comestibles",
+     "type_line": "Creature — Human Citizen",
+     "uri": "https://api.scryfall.com/cards/53f5f704-2265-42bb-bff5-fd9d85bc2bfb"
+    },
+    {
+     "object": "related_card",
+     "id": "dfd977dc-a7c3-4d0a-aca7-b25bd154e963",
+     "component": "combo_piece",
+     "name": "Cache Grab",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/dfd977dc-a7c3-4d0a-aca7-b25bd154e963"
+    },
+    {
+     "object": "related_card",
+     "id": "dc25ce46-9d1a-4d5d-b35d-ea7abb8c5e5c",
+     "component": "combo_piece",
+     "name": "Rocco, Street Chef",
+     "type_line": "Legendary Creature — Elf Druid",
+     "uri": "https://api.scryfall.com/cards/dc25ce46-9d1a-4d5d-b35d-ea7abb8c5e5c"
+    },
+    {
+     "object": "related_card",
+     "id": "599234de-4bbc-4c9b-84a2-c426e64597ff",
+     "component": "combo_piece",
+     "name": "Field-Tested Frying Pan",
+     "type_line": "Artifact — Equipment",
+     "uri": "https://api.scryfall.com/cards/599234de-4bbc-4c9b-84a2-c426e64597ff"
+    },
+    {
+     "object": "related_card",
+     "id": "8279d421-dd86-49d1-93f7-65f6046c542d",
+     "component": "combo_piece",
+     "name": "Gyome, Master Chef",
+     "type_line": "Legendary Creature — Troll Warlock",
+     "uri": "https://api.scryfall.com/cards/8279d421-dd86-49d1-93f7-65f6046c542d"
+    },
+    {
+     "object": "related_card",
+     "id": "59b211da-1438-456a-b38d-f11bc09260f0",
+     "component": "combo_piece",
+     "name": "Killer Service",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/59b211da-1438-456a-b38d-f11bc09260f0"
+    },
+    {
+     "object": "related_card",
+     "id": "9a37e9f3-8543-4c56-b7e3-0676db7e2154",
+     "component": "combo_piece",
+     "name": "Brandywine Farmer",
+     "type_line": "Creature — Halfling Peasant",
+     "uri": "https://api.scryfall.com/cards/9a37e9f3-8543-4c56-b7e3-0676db7e2154"
+    },
+    {
+     "object": "related_card",
+     "id": "b19fcc45-a77a-4296-a2a6-8320b5712cc5",
+     "component": "combo_piece",
+     "name": "Farmer Cotton",
+     "type_line": "Legendary Creature — Halfling Peasant",
+     "uri": "https://api.scryfall.com/cards/b19fcc45-a77a-4296-a2a6-8320b5712cc5"
+    },
+    {
+     "object": "related_card",
+     "id": "4224747e-1dbc-4a29-b5da-5916d8ca2768",
+     "component": "combo_piece",
+     "name": "Intrepid Trufflesnout // Go Hog Wild",
+     "type_line": "Creature — Boar // Instant — Adventure",
+     "uri": "https://api.scryfall.com/cards/4224747e-1dbc-4a29-b5da-5916d8ca2768"
+    },
+    {
+     "object": "related_card",
+     "id": "d44790d3-39ce-4e79-99b8-6b58cd578890",
+     "component": "combo_piece",
+     "name": "Rosie Cotton of South Lane",
+     "type_line": "Legendary Creature — Halfling Peasant",
+     "uri": "https://api.scryfall.com/cards/d44790d3-39ce-4e79-99b8-6b58cd578890"
+    },
+    {
+     "object": "related_card",
+     "id": "198be33b-d6d1-4c96-bdfa-4b4098079042",
+     "component": "combo_piece",
+     "name": "Trail of Crumbs",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/198be33b-d6d1-4c96-bdfa-4b4098079042"
+    },
+    {
+     "object": "related_card",
+     "id": "3c8b8eef-d150-4610-8428-d8ea75eeb80a",
+     "component": "combo_piece",
+     "name": "Peregrin Took",
+     "type_line": "Legendary Creature — Halfling Citizen",
+     "uri": "https://api.scryfall.com/cards/3c8b8eef-d150-4610-8428-d8ea75eeb80a"
+    },
+    {
+     "object": "related_card",
+     "id": "2ab0e660-86a3-4b92-82fa-77dcb5db947d",
+     "component": "combo_piece",
+     "name": "Bake into a Pie",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/2ab0e660-86a3-4b92-82fa-77dcb5db947d"
+    },
+    {
+     "object": "related_card",
+     "id": "0cfd18a5-e06a-4cb5-b78e-de18ec641321",
+     "component": "combo_piece",
+     "name": "Feed the Cauldron",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/0cfd18a5-e06a-4cb5-b78e-de18ec641321"
+    },
+    {
+     "object": "related_card",
+     "id": "9fbaabb5-e981-4cbf-888c-46449412711f",
+     "component": "combo_piece",
+     "name": "Lita, Little Orphan Amphibian",
+     "type_line": "Legendary Creature — Mutant Ninja Turtle",
+     "uri": "https://api.scryfall.com/cards/9fbaabb5-e981-4cbf-888c-46449412711f"
+    },
+    {
+     "object": "related_card",
+     "id": "d2709d91-4235-482c-b9b3-ac5d61cb5bcb",
+     "component": "combo_piece",
+     "name": "Oath of the Grey Host",
+     "type_line": "Enchantment — Saga",
+     "uri": "https://api.scryfall.com/cards/d2709d91-4235-482c-b9b3-ac5d61cb5bcb"
+    },
+    {
+     "object": "related_card",
+     "id": "2790a23d-00ff-47b7-badd-9dd68042bb99",
+     "component": "combo_piece",
+     "name": "Ignis Scientia",
+     "type_line": "Legendary Creature — Human Advisor",
+     "uri": "https://api.scryfall.com/cards/2790a23d-00ff-47b7-badd-9dd68042bb99"
+    },
+    {
+     "object": "related_card",
+     "id": "028f284b-4b4c-44e2-8ded-bc59ec71250f",
+     "component": "combo_piece",
+     "name": "Bag End Banquet",
+     "type_line": "Artifact",
+     "uri": "https://api.scryfall.com/cards/028f284b-4b4c-44e2-8ded-bc59ec71250f"
+    },
+    {
+     "object": "related_card",
+     "id": "514e6039-2722-4350-a8e0-b2964d6c100d",
+     "component": "combo_piece",
+     "name": "Concession Stand",
+     "type_line": "Artifact — Attraction",
+     "uri": "https://api.scryfall.com/cards/514e6039-2722-4350-a8e0-b2964d6c100d"
+    },
+    {
+     "object": "related_card",
+     "id": "cfdfa303-2578-455b-929c-a217a0261bb3",
+     "component": "combo_piece",
+     "name": "Sam, Loyal Attendant",
+     "type_line": "Legendary Creature — Halfling Peasant",
+     "uri": "https://api.scryfall.com/cards/cfdfa303-2578-455b-929c-a217a0261bb3"
+    },
+    {
+     "object": "related_card",
+     "id": "afec640e-2695-429f-82b3-61c2387e6f1e",
+     "component": "combo_piece",
+     "name": "Gluttonous Troll",
+     "type_line": "Creature — Troll",
+     "uri": "https://api.scryfall.com/cards/afec640e-2695-429f-82b3-61c2387e6f1e"
+    },
+    {
+     "object": "related_card",
+     "id": "f6d25476-cab1-4035-843f-19da73c4dac7",
+     "component": "combo_piece",
+     "name": "The Third Doctor",
+     "type_line": "Legendary Creature — Time Lord Doctor",
+     "uri": "https://api.scryfall.com/cards/f6d25476-cab1-4035-843f-19da73c4dac7"
+    },
+    {
+     "object": "related_card",
+     "id": "fdfdf736-45c5-4ce7-838c-dd9900627fa5",
+     "component": "combo_piece",
+     "name": "Overcooked",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/fdfdf736-45c5-4ce7-838c-dd9900627fa5"
+    },
+    {
+     "object": "related_card",
+     "id": "a08da5c6-ebe7-4166-99d5-2aca5b0b529f",
+     "component": "combo_piece",
+     "name": "Skybeast Tracker",
+     "type_line": "Creature — Giant Archer",
+     "uri": "https://api.scryfall.com/cards/a08da5c6-ebe7-4166-99d5-2aca5b0b529f"
+    },
+    {
+     "object": "related_card",
+     "id": "11603836-d1a3-4e95-a8cc-e6ca2c854309",
+     "component": "combo_piece",
+     "name": "Voracious Fell Beast",
+     "type_line": "Creature — Drake Beast",
+     "uri": "https://api.scryfall.com/cards/11603836-d1a3-4e95-a8cc-e6ca2c854309"
+    },
+    {
+     "object": "related_card",
+     "id": "d493c09c-7794-47ed-a002-3493187d1da6",
+     "component": "combo_piece",
+     "name": "Of Herbs and Stewed Rabbit",
+     "type_line": "Enchantment — Saga",
+     "uri": "https://api.scryfall.com/cards/d493c09c-7794-47ed-a002-3493187d1da6"
+    },
+    {
+     "object": "related_card",
+     "id": "a015282d-bcd4-44ab-ae26-41e4e3b23fc0",
+     "component": "combo_piece",
+     "name": "Provisions Merchant",
+     "type_line": "Creature — Beast Peasant",
+     "uri": "https://api.scryfall.com/cards/a015282d-bcd4-44ab-ae26-41e4e3b23fc0"
+    },
+    {
+     "object": "related_card",
+     "id": "445a4587-b8cd-4846-9d00-bb882766cf08",
+     "component": "combo_piece",
+     "name": "Late to Dinner",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/445a4587-b8cd-4846-9d00-bb882766cf08"
+    },
+    {
+     "object": "related_card",
+     "id": "dd9b6b3f-07b1-42d2-8aff-8da3113b9d88",
+     "component": "combo_piece",
+     "name": "Heroic Feast",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/dd9b6b3f-07b1-42d2-8aff-8da3113b9d88"
+    },
+    {
+     "object": "related_card",
+     "id": "b66bccde-c32f-4daa-89a9-a6561e9fdac7",
+     "component": "combo_piece",
+     "name": "Wish Good Luck",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/b66bccde-c32f-4daa-89a9-a6561e9fdac7"
+    },
+    {
+     "object": "related_card",
+     "id": "c5f79ec4-3722-4fda-824b-e80dc7608d01",
+     "component": "combo_piece",
+     "name": "Foreboding Fruit",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/c5f79ec4-3722-4fda-824b-e80dc7608d01"
+    },
+    {
+     "object": "related_card",
+     "id": "b6d3bff2-9d08-4774-909a-bac0ae6245df",
+     "component": "combo_piece",
+     "name": "Bartered Cow",
+     "type_line": "Creature — Ox",
+     "uri": "https://api.scryfall.com/cards/b6d3bff2-9d08-4774-909a-bac0ae6245df"
+    },
+    {
+     "object": "related_card",
+     "id": "61a89566-06c1-404f-8217-e5276e2dc5a2",
+     "component": "combo_piece",
+     "name": "Ant-Man's Army",
+     "type_line": "Creature — Insect",
+     "uri": "https://api.scryfall.com/cards/61a89566-06c1-404f-8217-e5276e2dc5a2"
+    },
+    {
+     "object": "related_card",
+     "id": "4a015ab6-4eb3-42e3-bb19-a0668e9f7ff0",
+     "component": "combo_piece",
+     "name": "White Glove Gourmand",
+     "type_line": "Creature — Human Noble",
+     "uri": "https://api.scryfall.com/cards/4a015ab6-4eb3-42e3-bb19-a0668e9f7ff0"
+    },
+    {
+     "object": "related_card",
+     "id": "4f24504e-b397-4b98-b8e8-8166457f7a2e",
+     "component": "combo_piece",
+     "name": "The Underworld Cookbook",
+     "type_line": "Artifact — Book",
+     "uri": "https://api.scryfall.com/cards/4f24504e-b397-4b98-b8e8-8166457f7a2e"
+    },
+    {
+     "object": "related_card",
+     "id": "b9fd720b-e9c2-4e82-917e-bab6c544afb0",
+     "component": "combo_piece",
+     "name": "Spider Food",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/b9fd720b-e9c2-4e82-917e-bab6c544afb0"
+    },
+    {
+     "object": "related_card",
+     "id": "6d284306-3365-45b4-8539-c2af7b3e16c4",
+     "component": "combo_piece",
+     "name": "Giant Opportunity",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/6d284306-3365-45b4-8539-c2af7b3e16c4"
+    },
+    {
+     "object": "related_card",
+     "id": "5fc454a5-39af-421d-a494-727ac7b6115e",
+     "component": "combo_piece",
+     "name": "Lucky the Pizza Dog",
+     "type_line": "Legendary Creature — Dog",
+     "uri": "https://api.scryfall.com/cards/5fc454a5-39af-421d-a494-727ac7b6115e"
+    },
+    {
+     "object": "related_card",
+     "id": "c9b7543f-2a45-4db6-b560-d15507a58c91",
+     "component": "combo_piece",
+     "name": "Midnight Snack",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/c9b7543f-2a45-4db6-b560-d15507a58c91"
+    },
+    {
+     "object": "related_card",
+     "id": "4fa29302-65bb-4852-94dd-9c5f5477f94f",
+     "component": "combo_piece",
+     "name": "Bristlebud Farmer",
+     "type_line": "Creature — Plant Druid",
+     "uri": "https://api.scryfall.com/cards/4fa29302-65bb-4852-94dd-9c5f5477f94f"
+    },
+    {
+     "object": "related_card",
+     "id": "f29ba4cb-112a-4065-883b-94d1e154b83f",
+     "component": "combo_piece",
+     "name": "Bumi's Feast Lecture",
+     "type_line": "Sorcery — Lesson",
+     "uri": "https://api.scryfall.com/cards/f29ba4cb-112a-4065-883b-94d1e154b83f"
+    },
+    {
+     "object": "related_card",
+     "id": "4ef54258-6b01-4758-aed0-695fe5c10dfb",
+     "component": "combo_piece",
+     "name": "Pippin, Warden of Isengard",
+     "type_line": "Legendary Creature — Halfling Advisor",
+     "uri": "https://api.scryfall.com/cards/4ef54258-6b01-4758-aed0-695fe5c10dfb"
+    },
+    {
+     "object": "related_card",
+     "id": "ec6d3402-eed6-44be-a572-9ec0678af403",
+     "component": "combo_piece",
+     "name": "Campsite Cuisine",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/ec6d3402-eed6-44be-a572-9ec0678af403"
+    },
+    {
+     "object": "related_card",
+     "id": "f8a73bf1-cf14-4a36-97ff-868212e0bfb8",
+     "component": "combo_piece",
+     "name": "Madame Vastra",
+     "type_line": "Legendary Creature — Lizard Detective",
+     "uri": "https://api.scryfall.com/cards/f8a73bf1-cf14-4a36-97ff-868212e0bfb8"
+    },
+    {
+     "object": "related_card",
+     "id": "d664f3ac-30c9-4e69-912c-60aa01a37366",
+     "component": "combo_piece",
+     "name": "Eastfarthing Farmer",
+     "type_line": "Creature — Halfling Peasant",
+     "uri": "https://api.scryfall.com/cards/d664f3ac-30c9-4e69-912c-60aa01a37366"
+    },
+    {
+     "object": "related_card",
+     "id": "27f53bed-7075-4303-aa9e-fcca0a266e19",
+     "component": "combo_piece",
+     "name": "Night of the Sweets' Revenge",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/27f53bed-7075-4303-aa9e-fcca0a266e19"
+    },
+    {
+     "object": "related_card",
+     "id": "dcfdb433-f4fb-4e3d-92b9-a7071d34a3dd",
+     "component": "combo_piece",
+     "name": "Insatiable Frugivore",
+     "type_line": "Creature — Rat Berserker",
+     "uri": "https://api.scryfall.com/cards/dcfdb433-f4fb-4e3d-92b9-a7071d34a3dd"
+    },
+    {
+     "object": "related_card",
+     "id": "84933e48-8b10-4ccf-a7e8-140fbb9c0c9b",
+     "component": "combo_piece",
+     "name": "Spectrox Mines",
+     "type_line": "Plane — Androzani Minor",
+     "uri": "https://api.scryfall.com/cards/84933e48-8b10-4ccf-a7e8-140fbb9c0c9b"
+    },
+    {
+     "object": "related_card",
+     "id": "75821f46-a60c-4113-80e7-97bc624dca50",
+     "component": "combo_piece",
+     "name": "Gumdrop Poisoner // Tempt with Treats",
+     "type_line": "Creature — Human Warlock // Instant — Adventure",
+     "uri": "https://api.scryfall.com/cards/75821f46-a60c-4113-80e7-97bc624dca50"
+    },
+    {
+     "object": "related_card",
+     "id": "0ad345b6-7077-4dd2-b515-c774a3185fe4",
+     "component": "combo_piece",
+     "name": "Hollow Scavenger // Bakery Raid",
+     "type_line": "Creature — Wolf // Sorcery — Adventure",
+     "uri": "https://api.scryfall.com/cards/0ad345b6-7077-4dd2-b515-c774a3185fe4"
+    },
+    {
+     "object": "related_card",
+     "id": "526fe356-bff1-4211-9e88-bf913ac76b1d",
+     "component": "combo_piece",
+     "name": "Cat Collector",
+     "type_line": "Creature — Human Citizen",
+     "uri": "https://api.scryfall.com/cards/526fe356-bff1-4211-9e88-bf913ac76b1d"
+    },
+    {
+     "object": "related_card",
+     "id": "9597d9ea-d9b2-4009-8e7c-02caa3585bc5",
+     "component": "combo_piece",
+     "name": "Return from the Wilds",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/9597d9ea-d9b2-4009-8e7c-02caa3585bc5"
+    },
+    {
+     "object": "related_card",
+     "id": "899ce2c9-b2aa-47c9-ae6e-480c9733e5bb",
+     "component": "combo_piece",
+     "name": "Overencumbered",
+     "type_line": "Enchantment — Aura",
+     "uri": "https://api.scryfall.com/cards/899ce2c9-b2aa-47c9-ae6e-480c9733e5bb"
+    },
+    {
+     "object": "related_card",
+     "id": "685c72fb-ebb8-4474-bd73-bcbbbc38c496",
+     "component": "combo_piece",
+     "name": "Rapacious Guest",
+     "type_line": "Creature — Halfling Citizen",
+     "uri": "https://api.scryfall.com/cards/685c72fb-ebb8-4474-bd73-bcbbbc38c496"
+    },
+    {
+     "object": "related_card",
+     "id": "9121582e-5a24-45c6-8c81-c296e379b3fb",
+     "component": "combo_piece",
+     "name": "Meatsqueak, Hoard Lord",
+     "type_line": "Legendary Creature — Squirrel",
+     "uri": "https://api.scryfall.com/cards/9121582e-5a24-45c6-8c81-c296e379b3fb"
+    },
+    {
+     "object": "related_card",
+     "id": "00cf8be8-8359-4172-8e86-07ecbbf1fd58",
+     "component": "combo_piece",
+     "name": "Ninja Pizza",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/00cf8be8-8359-4172-8e86-07ecbbf1fd58"
+    },
+    {
+     "object": "related_card",
+     "id": "b6178258-1ad6-4122-a56f-6eb7d0611e84",
+     "component": "combo_piece",
+     "name": "Valley Rally",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/b6178258-1ad6-4122-a56f-6eb7d0611e84"
+    },
+    {
+     "object": "related_card",
+     "id": "2285b3a3-782e-4acd-bf32-cb116c27b883",
+     "component": "combo_piece",
+     "name": "Savvy Hunter",
+     "type_line": "Creature — Human Warrior",
+     "uri": "https://api.scryfall.com/cards/2285b3a3-782e-4acd-bf32-cb116c27b883"
+    },
+    {
+     "object": "related_card",
+     "id": "fa684608-ecd3-43e2-99a1-71318f133e29",
+     "component": "combo_piece",
+     "name": "Tainted Treats",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/fa684608-ecd3-43e2-99a1-71318f133e29"
+    },
+    {
+     "object": "related_card",
+     "id": "016b0750-d48d-4b6e-ac9c-a7904371a914",
+     "component": "combo_piece",
+     "name": "Oko, Thief of Crowns",
+     "type_line": "Legendary Planeswalker — Oko",
+     "uri": "https://api.scryfall.com/cards/016b0750-d48d-4b6e-ac9c-a7904371a914"
+    },
+    {
+     "object": "related_card",
+     "id": "a6bdb984-06f8-4bca-a943-17fe5db97682",
+     "component": "combo_piece",
+     "name": "Sweettooth Witch",
+     "type_line": "Creature — Human Warlock",
+     "uri": "https://api.scryfall.com/cards/a6bdb984-06f8-4bca-a943-17fe5db97682"
+    },
+    {
+     "object": "related_card",
+     "id": "fc676894-59de-4e69-a110-5e4def877c58",
+     "component": "combo_piece",
+     "name": "Revive the Shire",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/fc676894-59de-4e69-a110-5e4def877c58"
+    },
+    {
+     "object": "related_card",
+     "id": "d3154e82-3497-47ad-99e5-369cb40ac869",
+     "component": "combo_piece",
+     "name": "Tippy-Toe, Terrific Partner",
+     "type_line": "Legendary Creature — Squirrel Hero",
+     "uri": "https://api.scryfall.com/cards/d3154e82-3497-47ad-99e5-369cb40ac869"
+    },
+    {
+     "object": "related_card",
+     "id": "ed22dc33-d3c0-454e-aa41-29b653742964",
+     "component": "combo_piece",
+     "name": "The Eleventh Hour",
+     "type_line": "Enchantment — Saga",
+     "uri": "https://api.scryfall.com/cards/ed22dc33-d3c0-454e-aa41-29b653742964"
+    },
+    {
+     "object": "related_card",
+     "id": "bd5cc052-7175-4bb8-a52c-f1fb80cb731a",
+     "component": "combo_piece",
+     "name": "Nuka-Cola Vending Machine",
+     "type_line": "Artifact",
+     "uri": "https://api.scryfall.com/cards/bd5cc052-7175-4bb8-a52c-f1fb80cb731a"
+    },
+    {
+     "object": "related_card",
+     "id": "5f0affd5-5dcd-4dd1-a694-37a9aedf4084",
+     "component": "combo_piece",
+     "name": "Bumbleflower's Sharepot",
+     "type_line": "Artifact",
+     "uri": "https://api.scryfall.com/cards/5f0affd5-5dcd-4dd1-a694-37a9aedf4084"
+    },
+    {
+     "object": "related_card",
+     "id": "70dbb5f3-0552-408c-9d02-9f9afc72fa7b",
+     "component": "combo_piece",
+     "name": "Feasting Troll King",
+     "type_line": "Creature — Troll Noble",
+     "uri": "https://api.scryfall.com/cards/70dbb5f3-0552-408c-9d02-9f9afc72fa7b"
+    },
+    {
+     "object": "related_card",
+     "id": "bf6193ea-4906-4097-8e30-431220f9e35c",
+     "component": "combo_piece",
+     "name": "The Dining Car",
+     "type_line": "Plane — Spacecraft",
+     "uri": "https://api.scryfall.com/cards/bf6193ea-4906-4097-8e30-431220f9e35c"
+    },
+    {
+     "object": "related_card",
+     "id": "741caee0-03c7-4b72-8f71-234e66eb6609",
+     "component": "combo_piece",
+     "name": "Vault 101: Birthday Party",
+     "type_line": "Enchantment — Saga",
+     "uri": "https://api.scryfall.com/cards/741caee0-03c7-4b72-8f71-234e66eb6609"
+    },
+    {
+     "object": "related_card",
+     "id": "2a0410cb-e202-4bad-a6a5-e3e58e574157",
+     "component": "combo_piece",
+     "name": "Graham O'Brien",
+     "type_line": "Legendary Creature — Human Pilot",
+     "uri": "https://api.scryfall.com/cards/2a0410cb-e202-4bad-a6a5-e3e58e574157"
+    },
+    {
+     "object": "related_card",
+     "id": "78c55706-4d00-4b97-965c-0b2d0963e59d",
+     "component": "combo_piece",
+     "name": "Featherbrained Filcher",
+     "type_line": "Creature — Bird Mutant",
+     "uri": "https://api.scryfall.com/cards/78c55706-4d00-4b97-965c-0b2d0963e59d"
+    },
+    {
+     "object": "related_card",
+     "id": "4fedf84e-55ca-4334-a2c1-6e991112bb68",
+     "component": "combo_piece",
+     "name": "Apothecary White",
+     "type_line": "Legendary Creature — Human Cleric",
+     "uri": "https://api.scryfall.com/cards/4fedf84e-55ca-4334-a2c1-6e991112bb68"
+    },
+    {
+     "object": "related_card",
+     "id": "b18995c2-efe3-46ca-8204-e2dc0e42f6e3",
+     "component": "combo_piece",
+     "name": "Leaves from the Vine",
+     "type_line": "Enchantment — Saga",
+     "uri": "https://api.scryfall.com/cards/b18995c2-efe3-46ca-8204-e2dc0e42f6e3"
+    },
+    {
+     "object": "related_card",
+     "id": "cc0fc98e-49ec-4d76-a922-52fe481da88f",
+     "component": "combo_piece",
+     "name": "Samwise Gamgee",
+     "type_line": "Legendary Creature — Halfling Peasant",
+     "uri": "https://api.scryfall.com/cards/cc0fc98e-49ec-4d76-a922-52fe481da88f"
+    },
+    {
+     "object": "related_card",
+     "id": "38e91870-bb00-437c-99d5-29d13d79989a",
+     "component": "combo_piece",
+     "name": "Restless Cottage",
+     "type_line": "Land",
+     "uri": "https://api.scryfall.com/cards/38e91870-bb00-437c-99d5-29d13d79989a"
+    },
+    {
+     "object": "related_card",
+     "id": "a6e8433d-eb2a-43d1-b59b-7d70ff97c8e7",
+     "component": "combo_piece",
+     "name": "Eager Trufflesnout",
+     "type_line": "Creature — Boar",
+     "uri": "https://api.scryfall.com/cards/a6e8433d-eb2a-43d1-b59b-7d70ff97c8e7"
+    },
+    {
+     "object": "related_card",
+     "id": "8adbd4a5-3171-495a-a540-0ecf280b77fc",
+     "component": "combo_piece",
+     "name": "Tempting Witch",
+     "type_line": "Creature — Human Warlock",
+     "uri": "https://api.scryfall.com/cards/8adbd4a5-3171-495a-a540-0ecf280b77fc"
+    },
+    {
+     "object": "related_card",
+     "id": "5478bda7-2524-4095-941b-5dcc261ba985",
+     "component": "combo_piece",
+     "name": "Treebeard, Gracious Host",
+     "type_line": "Legendary Creature — Treefolk",
+     "uri": "https://api.scryfall.com/cards/5478bda7-2524-4095-941b-5dcc261ba985"
+    },
+    {
+     "object": "related_card",
+     "id": "42353f71-9c79-4105-a117-c12b3f4ac895",
+     "component": "combo_piece",
+     "name": "Sorin of House Markov // Sorin, Ravenous Neonate",
+     "type_line": "Legendary Creature — Human Noble // Legendary Planeswalker — Sorin",
+     "uri": "https://api.scryfall.com/cards/42353f71-9c79-4105-a117-c12b3f4ac895"
+    },
+    {
+     "object": "related_card",
+     "id": "9350bf4a-fa12-4867-b31f-1f1394d99571",
+     "component": "combo_piece",
+     "name": "Momo, Playful Pet",
+     "type_line": "Legendary Creature — Lemur Bat Ally",
+     "uri": "https://api.scryfall.com/cards/9350bf4a-fa12-4867-b31f-1f1394d99571"
+    },
+    {
+     "object": "related_card",
+     "id": "a23d6283-c7a3-45a1-8c6b-cd806212d5e3",
+     "component": "combo_piece",
+     "name": "Elephant-Mandrill",
+     "type_line": "Creature — Elephant Monkey",
+     "uri": "https://api.scryfall.com/cards/a23d6283-c7a3-45a1-8c6b-cd806212d5e3"
+    },
+    {
+     "object": "related_card",
+     "id": "7a08a9fe-1a77-40fb-b568-549adba58c7b",
+     "component": "combo_piece",
+     "name": "Iroh, Tea Master",
+     "type_line": "Legendary Creature — Human Citizen Ally",
+     "uri": "https://api.scryfall.com/cards/7a08a9fe-1a77-40fb-b568-549adba58c7b"
+    },
+    {
+     "object": "related_card",
+     "id": "49aaf5db-9418-4b97-97da-736c674905d4",
+     "component": "combo_piece",
+     "name": "Experimental Confectioner",
+     "type_line": "Creature — Human Peasant",
+     "uri": "https://api.scryfall.com/cards/49aaf5db-9418-4b97-97da-736c674905d4"
+    },
+    {
+     "object": "related_card",
+     "id": "4462f57d-5214-4b0e-a963-e0077741aad1",
+     "component": "combo_piece",
+     "name": "Fae Offering",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/4462f57d-5214-4b0e-a963-e0077741aad1"
+    },
+    {
+     "object": "related_card",
+     "id": "09ffe48f-abfa-4110-805e-35671b42386d",
+     "component": "combo_piece",
+     "name": "Tough Cookie",
+     "type_line": "Artifact Creature — Food Golem",
+     "uri": "https://api.scryfall.com/cards/09ffe48f-abfa-4110-805e-35671b42386d"
+    },
+    {
+     "object": "related_card",
+     "id": "05c31120-7d4a-42d9-adad-53970fdf566e",
+     "component": "combo_piece",
+     "name": "Jandor, Fortuned Traveler",
+     "type_line": "Legendary Creature — Human Citizen",
+     "uri": "https://api.scryfall.com/cards/05c31120-7d4a-42d9-adad-53970fdf566e"
+    },
+    {
+     "object": "related_card",
+     "id": "00841818-d46a-4865-a41c-daf627d10d1b",
+     "component": "combo_piece",
+     "name": "Hurska Sweet-Tooth",
+     "type_line": "Legendary Creature — Bear",
+     "uri": "https://api.scryfall.com/cards/00841818-d46a-4865-a41c-daf627d10d1b"
+    },
+    {
+     "object": "related_card",
+     "id": "d27b6f2a-84df-4097-a66a-8e463db47f58",
+     "component": "combo_piece",
+     "name": "Party Dude",
+     "type_line": "Enchantment — Class",
+     "uri": "https://api.scryfall.com/cards/d27b6f2a-84df-4097-a66a-8e463db47f58"
+    },
+    {
+     "object": "related_card",
+     "id": "1546013b-89d7-46b8-bfcb-9d150a50499f",
+     "component": "combo_piece",
+     "name": "Witch's Oven",
+     "type_line": "Artifact",
+     "uri": "https://api.scryfall.com/cards/1546013b-89d7-46b8-bfcb-9d150a50499f"
+    },
+    {
+     "object": "related_card",
+     "id": "29267b6b-e0d9-4514-8932-16bf8e6db3bb",
+     "component": "combo_piece",
+     "name": "Many Partings",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/29267b6b-e0d9-4514-8932-16bf8e6db3bb"
+    },
+    {
+     "object": "related_card",
+     "id": "3c7b3b25-d4b3-4451-9f5c-6eb369541175",
+     "component": "combo_piece",
+     "name": "Crumb and Get It",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/3c7b3b25-d4b3-4451-9f5c-6eb369541175"
+    },
+    {
+     "object": "related_card",
+     "id": "8e629a31-2e06-4f95-9628-34670dcf68b9",
+     "component": "combo_piece",
+     "name": "Welcome to Sweettooth",
+     "type_line": "Enchantment — Saga",
+     "uri": "https://api.scryfall.com/cards/8e629a31-2e06-4f95-9628-34670dcf68b9"
+    },
+    {
+     "object": "related_card",
+     "id": "8314297a-5c97-4d94-800c-0f9e42fca902",
+     "component": "combo_piece",
+     "name": "The Shire",
+     "type_line": "Legendary Land",
+     "uri": "https://api.scryfall.com/cards/8314297a-5c97-4d94-800c-0f9e42fca902"
+    },
+    {
+     "object": "related_card",
+     "id": "1897db0c-db6d-4018-bf2a-9221bb0d6e61",
+     "component": "combo_piece",
+     "name": "The Art of Tea",
+     "type_line": "Instant — Lesson",
+     "uri": "https://api.scryfall.com/cards/1897db0c-db6d-4018-bf2a-9221bb0d6e61"
+    },
+    {
+     "object": "related_card",
+     "id": "dfb85545-22d0-4265-94e2-8805d2ccf0f8",
+     "component": "combo_piece",
+     "name": "Bosco, Just a Bear",
+     "type_line": "Legendary Creature — Bear",
+     "uri": "https://api.scryfall.com/cards/dfb85545-22d0-4265-94e2-8805d2ccf0f8"
+    },
+    {
+     "object": "related_card",
+     "id": "0dce2241-e58b-41d4-b57c-9794fc8ee004",
+     "component": "token",
+     "name": "Food",
+     "type_line": "Token Artifact — Food",
+     "uri": "https://api.scryfall.com/cards/0dce2241-e58b-41d4-b57c-9794fc8ee004"
+    },
+    {
+     "object": "related_card",
+     "id": "47a2058a-24a7-4b10-a1d5-0b69e94c8688",
+     "component": "combo_piece",
+     "name": "Transmutation Font",
+     "type_line": "Artifact",
+     "uri": "https://api.scryfall.com/cards/47a2058a-24a7-4b10-a1d5-0b69e94c8688"
+    },
+    {
+     "object": "related_card",
+     "id": "365b2234-c29d-42db-a8e0-80685a4b6434",
+     "component": "token",
+     "name": "Boar",
+     "type_line": "Token Creature — Boar",
+     "uri": "https://api.scryfall.com/cards/365b2234-c29d-42db-a8e0-80685a4b6434"
+    },
+    {
+     "object": "related_card",
+     "id": "27c57721-547a-405e-931a-bdc6e1950df3",
+     "component": "combo_piece",
+     "name": "The Battle of Bywater",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/27c57721-547a-405e-931a-bdc6e1950df3"
+    },
+    {
+     "object": "related_card",
+     "id": "050c03f9-ccbd-4dcc-9789-8013875ef470",
+     "component": "combo_piece",
+     "name": "Giant's Skewer",
+     "type_line": "Artifact — Equipment",
+     "uri": "https://api.scryfall.com/cards/050c03f9-ccbd-4dcc-9789-8013875ef470"
+    },
+    {
+     "object": "related_card",
+     "id": "5ac60ed5-5f28-4e8b-9417-7b2ba52b5880",
+     "component": "combo_piece",
+     "name": "Food Coma",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/5ac60ed5-5f28-4e8b-9417-7b2ba52b5880"
+    },
+    {
+     "object": "related_card",
+     "id": "ac73d130-ceb6-41ea-af0d-314d5adba9e6",
+     "component": "combo_piece",
+     "name": "Tireless Provisioner",
+     "type_line": "Creature — Elf Scout",
+     "uri": "https://api.scryfall.com/cards/ac73d130-ceb6-41ea-af0d-314d5adba9e6"
+    },
+    {
+     "object": "related_card",
+     "id": "726882db-0fac-4a86-ab85-c62bcb593093",
+     "component": "combo_piece",
+     "name": "City Pigeon",
+     "type_line": "Creature — Bird",
+     "uri": "https://api.scryfall.com/cards/726882db-0fac-4a86-ab85-c62bcb593093"
+    },
+    {
+     "object": "related_card",
+     "id": "47ca4926-b5ac-405a-8b58-f8db6df400ff",
+     "component": "combo_piece",
+     "name": "The Witch's Vanity",
+     "type_line": "Enchantment — Saga",
+     "uri": "https://api.scryfall.com/cards/47ca4926-b5ac-405a-8b58-f8db6df400ff"
+    },
+    {
+     "object": "related_card",
+     "id": "7b35ec3c-6da6-435d-b094-14a56cec58fe",
+     "component": "combo_piece",
+     "name": "Elanor Gardner",
+     "type_line": "Legendary Creature — Halfling Scout",
+     "uri": "https://api.scryfall.com/cards/7b35ec3c-6da6-435d-b094-14a56cec58fe"
+    },
+    {
+     "object": "related_card",
+     "id": "207788a7-c6aa-4aad-b2d1-f1b20355ae7b",
+     "component": "combo_piece",
+     "name": "Fierce Witchstalker",
+     "type_line": "Creature — Wolf",
+     "uri": "https://api.scryfall.com/cards/207788a7-c6aa-4aad-b2d1-f1b20355ae7b"
+    },
+    {
+     "object": "related_card",
+     "id": "e3150f4f-2ec5-483c-ac8a-306b6f99e65a",
+     "component": "combo_piece",
+     "name": "Scavenger's Talent",
+     "type_line": "Enchantment — Class",
+     "uri": "https://api.scryfall.com/cards/e3150f4f-2ec5-483c-ac8a-306b6f99e65a"
+    },
+    {
+     "object": "related_card",
+     "id": "c62d0ae9-5a82-40bf-b8bb-9c2e2d55d458",
+     "component": "combo_piece",
+     "name": "Scream Puff",
+     "type_line": "Creature — Horror",
+     "uri": "https://api.scryfall.com/cards/c62d0ae9-5a82-40bf-b8bb-9c2e2d55d458"
+    },
+    {
+     "object": "related_card",
+     "id": "ffabb307-87f0-428b-a4dc-a147c6c926a8",
+     "component": "combo_piece",
+     "name": "Generous Ent",
+     "type_line": "Creature — Treefolk",
+     "uri": "https://api.scryfall.com/cards/ffabb307-87f0-428b-a4dc-a147c6c926a8"
+    },
+    {
+     "object": "related_card",
+     "id": "30a30bfb-f0f3-425b-b37d-20079ee27046",
+     "component": "combo_piece",
+     "name": "Canyon Crawler",
+     "type_line": "Creature — Spider Beast",
+     "uri": "https://api.scryfall.com/cards/30a30bfb-f0f3-425b-b37d-20079ee27046"
+    },
+    {
+     "object": "related_card",
+     "id": "bdb5452e-d97f-409b-91d0-2664f39b09b8",
+     "component": "combo_piece",
+     "name": "Sidequest: Catch a Fish // Cooking Campsite",
+     "type_line": "Enchantment // Land",
+     "uri": "https://api.scryfall.com/cards/bdb5452e-d97f-409b-91d0-2664f39b09b8"
+    },
+    {
+     "object": "related_card",
+     "id": "3f88a06a-ab45-48b5-99cd-f13aede9dfc0",
+     "component": "combo_piece",
+     "name": "Second Breakfast",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/3f88a06a-ab45-48b5-99cd-f13aede9dfc0"
+    },
+    {
+     "object": "related_card",
+     "id": "0292a859-79b4-46ae-b2fe-293dae5cba7a",
+     "component": "combo_piece",
+     "name": "The Fourth Doctor",
+     "type_line": "Legendary Creature — Time Lord Doctor",
+     "uri": "https://api.scryfall.com/cards/0292a859-79b4-46ae-b2fe-293dae5cba7a"
+    },
+    {
+     "object": "related_card",
+     "id": "ae4cebb7-927c-4958-974a-279924ec6d48",
+     "component": "combo_piece",
+     "name": "Creeping Crystal Coating",
+     "type_line": "Enchantment — Aura",
+     "uri": "https://api.scryfall.com/cards/ae4cebb7-927c-4958-974a-279924ec6d48"
+    },
+    {
+     "object": "related_card",
+     "id": "6b90c983-ff77-4dde-b6cb-6da1fb9bb260",
+     "component": "combo_piece",
+     "name": "Shelob's Ambush",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/6b90c983-ff77-4dde-b6cb-6da1fb9bb260"
+    },
+    {
+     "object": "related_card",
+     "id": "acdab158-3e36-42cd-9fda-e8282dbafeb2",
+     "component": "combo_piece",
+     "name": "Orchard Strider",
+     "type_line": "Creature — Treefolk",
+     "uri": "https://api.scryfall.com/cards/acdab158-3e36-42cd-9fda-e8282dbafeb2"
+    },
+    {
+     "object": "related_card",
+     "id": "33d3cc84-7cb6-4de2-9018-4695a3b1e099",
+     "component": "combo_piece",
+     "name": "Fell the Pheasant",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/33d3cc84-7cb6-4de2-9018-4695a3b1e099"
+    },
+    {
+     "object": "related_card",
+     "id": "a8f02241-b268-43c8-b69e-bf10c8a9b9ca",
+     "component": "combo_piece",
+     "name": "Applejack",
+     "type_line": "Legendary Creature — Pony",
+     "uri": "https://api.scryfall.com/cards/a8f02241-b268-43c8-b69e-bf10c8a9b9ca"
+    },
+    {
+     "object": "related_card",
+     "id": "bfb8cc18-d5ac-47c3-bf6e-b3ac22aa303e",
+     "component": "combo_piece",
+     "name": "Devouring Sugarmaw // Have for Dinner",
+     "type_line": "Creature — Horror // Instant — Adventure",
+     "uri": "https://api.scryfall.com/cards/bfb8cc18-d5ac-47c3-bf6e-b3ac22aa303e"
+    },
+    {
+     "object": "related_card",
+     "id": "d902f154-6fe8-4b97-aa67-4d4696abf887",
+     "component": "combo_piece",
+     "name": "Mintstrosity",
+     "type_line": "Creature — Horror",
+     "uri": "https://api.scryfall.com/cards/d902f154-6fe8-4b97-aa67-4d4696abf887"
+    },
+    {
+     "object": "related_card",
+     "id": "e074e0a7-1411-47ea-a71c-3493cb16bcdc",
+     "component": "combo_piece",
+     "name": "Cirith Ungol Patrol",
+     "type_line": "Creature — Orc Soldier",
+     "uri": "https://api.scryfall.com/cards/e074e0a7-1411-47ea-a71c-3493cb16bcdc"
+    },
+    {
+     "object": "related_card",
+     "id": "1fccd76c-cce9-4ae3-84c1-000e54ca4734",
+     "component": "combo_piece",
+     "name": "The Wilds",
+     "type_line": "Plane — Eldraine",
+     "uri": "https://api.scryfall.com/cards/1fccd76c-cce9-4ae3-84c1-000e54ca4734"
+    },
+    {
+     "object": "related_card",
+     "id": "6ee3b883-e9f5-426f-a2ea-96fe9ff3aba9",
+     "component": "combo_piece",
+     "name": "Hot Dog Cart",
+     "type_line": "Artifact",
+     "uri": "https://api.scryfall.com/cards/6ee3b883-e9f5-426f-a2ea-96fe9ff3aba9"
+    },
+    {
+     "object": "related_card",
+     "id": "f2a37dcb-4a18-4f03-b28c-27188a1a5ec1",
+     "component": "combo_piece",
+     "name": "Turn into a Pumpkin",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/f2a37dcb-4a18-4f03-b28c-27188a1a5ec1"
+    },
+    {
+     "object": "related_card",
+     "id": "9bbc8de9-6f74-468f-834c-46d10864e36b",
+     "component": "combo_piece",
+     "name": "Galadriel, Gift-Giver",
+     "type_line": "Legendary Creature — Elf Noble",
+     "uri": "https://api.scryfall.com/cards/9bbc8de9-6f74-468f-834c-46d10864e36b"
+    },
+    {
+     "object": "related_card",
+     "id": "103fa2de-6c5d-419b-8261-ad027cd229b9",
+     "component": "combo_piece",
+     "name": "Questionable Cuisine",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/103fa2de-6c5d-419b-8261-ad027cd229b9"
+    },
+    {
+     "object": "related_card",
+     "id": "0a838009-b115-4497-b35d-682e41ead7db",
+     "component": "combo_piece",
+     "name": "Unlucky Cabbage Merchant",
+     "type_line": "Creature — Human Citizen",
+     "uri": "https://api.scryfall.com/cards/0a838009-b115-4497-b35d-682e41ead7db"
+    },
+    {
+     "object": "related_card",
+     "id": "29b615ba-45c4-42a1-8525-1535f0b55300",
+     "component": "combo_piece",
+     "name": "Vinereap Mentor",
+     "type_line": "Creature — Squirrel Druid",
+     "uri": "https://api.scryfall.com/cards/29b615ba-45c4-42a1-8525-1535f0b55300"
+    },
+    {
+     "object": "related_card",
+     "id": "fbc33291-a597-4c70-8072-aa7251e57e78",
+     "component": "combo_piece",
+     "name": "Gift Shop",
+     "type_line": "Artifact — Attraction",
+     "uri": "https://api.scryfall.com/cards/fbc33291-a597-4c70-8072-aa7251e57e78"
+    },
+    {
+     "object": "related_card",
+     "id": "a094fa16-256f-4fb1-9738-3025085d1941",
+     "component": "combo_piece",
+     "name": "The Goose Mother",
+     "type_line": "Legendary Creature — Bird Hydra",
+     "uri": "https://api.scryfall.com/cards/a094fa16-256f-4fb1-9738-3025085d1941"
+    },
+    {
+     "object": "related_card",
+     "id": "1397f689-dca1-4d35-864b-92c5606afb9a",
+     "component": "combo_piece",
+     "name": "Savor",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/1397f689-dca1-4d35-864b-92c5606afb9a"
+    },
+    {
+     "object": "related_card",
+     "id": "65ffb473-0a11-44c2-9311-f39d69eef713",
+     "component": "combo_piece",
+     "name": "The Cabbage Merchant",
+     "type_line": "Legendary Creature — Human Citizen",
+     "uri": "https://api.scryfall.com/cards/65ffb473-0a11-44c2-9311-f39d69eef713"
+    },
+    {
+     "object": "related_card",
+     "id": "f957c4d9-834b-4ad1-915b-5f496d63489e",
+     "component": "combo_piece",
+     "name": "Bill the Pony",
+     "type_line": "Legendary Creature — Horse",
+     "uri": "https://api.scryfall.com/cards/f957c4d9-834b-4ad1-915b-5f496d63489e"
+    },
+    {
+     "object": "related_card",
+     "id": "fd827857-3971-48ec-9aec-fe7d4c49882a",
+     "component": "combo_piece",
+     "name": "Sierra, Nuka's Biggest Fan",
+     "type_line": "Legendary Creature — Human Citizen",
+     "uri": "https://api.scryfall.com/cards/fd827857-3971-48ec-9aec-fe7d4c49882a"
+    },
+    {
+     "object": "related_card",
+     "id": "4f8ca405-f3e2-4efd-9f31-2acc44fefc1b",
+     "component": "combo_piece",
+     "name": "Curious Pair // Treats to Share",
+     "type_line": "Creature — Human Peasant // Sorcery — Adventure",
+     "uri": "https://api.scryfall.com/cards/4f8ca405-f3e2-4efd-9f31-2acc44fefc1b"
+    },
+    {
+     "object": "related_card",
+     "id": "b03cf0bb-3207-4e8e-bb3f-e3e4367aa86e",
+     "component": "combo_piece",
+     "name": "Pizza Face, Gastromancer",
+     "type_line": "Legendary Artifact Creature — Food Mutant",
+     "uri": "https://api.scryfall.com/cards/b03cf0bb-3207-4e8e-bb3f-e3e4367aa86e"
+    },
+    {
+     "object": "related_card",
+     "id": "95965b9a-9ab3-4dd4-b8de-65df9c62e797",
+     "component": "combo_piece",
+     "name": "Hazel's Brewmaster",
+     "type_line": "Creature — Squirrel Warlock",
+     "uri": "https://api.scryfall.com/cards/95965b9a-9ab3-4dd4-b8de-65df9c62e797"
+    },
+    {
+     "object": "related_card",
+     "id": "ae3257ec-d5f3-4cfb-8446-cbeb236ee10e",
+     "component": "combo_piece",
+     "name": "Albiorix, Goose Tyrant // Wild Goose Chase",
+     "type_line": "Legendary Creature — Bird // Instant — Adventure",
+     "uri": "https://api.scryfall.com/cards/ae3257ec-d5f3-4cfb-8446-cbeb236ee10e"
+    },
+    {
+     "object": "related_card",
+     "id": "6c22504f-45a4-41b1-9e75-63712162f55b",
+     "component": "combo_piece",
+     "name": "Sophia, Dogged Detective",
+     "type_line": "Legendary Creature — Human Detective",
+     "uri": "https://api.scryfall.com/cards/6c22504f-45a4-41b1-9e75-63712162f55b"
+    },
+    {
+     "object": "related_card",
+     "id": "27032171-abf2-4ebe-a86a-f8b64d93072c",
+     "component": "combo_piece",
+     "name": "Butterbur, Bree Innkeeper",
+     "type_line": "Legendary Creature — Human Peasant",
+     "uri": "https://api.scryfall.com/cards/27032171-abf2-4ebe-a86a-f8b64d93072c"
+    },
+    {
+     "object": "related_card",
+     "id": "5309354f-1ff4-4fa9-9141-01ea2f7588ab",
+     "component": "combo_piece",
+     "name": "Bakersbane Duo",
+     "type_line": "Creature — Squirrel Raccoon",
+     "uri": "https://api.scryfall.com/cards/5309354f-1ff4-4fa9-9141-01ea2f7588ab"
+    },
+    {
+     "object": "related_card",
+     "id": "742c0409-9abd-4559-b52e-932cc90c531a",
+     "component": "combo_piece",
+     "name": "Nocturnal Hunger",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/742c0409-9abd-4559-b52e-932cc90c531a"
+    },
+    {
+     "object": "related_card",
+     "id": "58b98563-88b6-49a1-b467-a24e7a985f72",
+     "component": "combo_piece",
+     "name": "Fortifying Provisions",
+     "type_line": "Enchantment",
+     "uri": "https://api.scryfall.com/cards/58b98563-88b6-49a1-b467-a24e7a985f72"
+    },
+    {
+     "object": "related_card",
+     "id": "4c6b7f78-3882-42cc-bac5-4df33938a6f2",
+     "component": "combo_piece",
+     "name": "Michelangelo, the Heart",
+     "type_line": "Legendary Creature — Mutant Ninja Turtle",
+     "uri": "https://api.scryfall.com/cards/4c6b7f78-3882-42cc-bac5-4df33938a6f2"
+    },
+    {
+     "object": "related_card",
+     "id": "8d3facb6-314c-4dd2-a570-4515c596163c",
+     "component": "combo_piece",
+     "name": "Gilded Goose",
+     "type_line": "Creature — Bird",
+     "uri": "https://api.scryfall.com/cards/8d3facb6-314c-4dd2-a570-4515c596163c"
+    },
+    {
+     "object": "related_card",
+     "id": "2f5b4544-70d9-45ee-84a3-fa6253a53a82",
+     "component": "combo_piece",
+     "name": "Academy Manufactor",
+     "type_line": "Artifact Creature — Assembly-Worker",
+     "uri": "https://api.scryfall.com/cards/2f5b4544-70d9-45ee-84a3-fa6253a53a82"
+    },
+    {
+     "object": "related_card",
+     "id": "bb127265-7be7-4807-884e-bf9f49c39192",
+     "component": "combo_piece",
+     "name": "Stew the Coneys",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/bb127265-7be7-4807-884e-bf9f49c39192"
+    },
+    {
+     "object": "related_card",
+     "id": "e77a8fd4-af5f-42b3-a87e-788baf2562dd",
+     "component": "combo_piece",
+     "name": "Gingerbread Hunter // Puny Snack",
+     "type_line": "Creature — Giant // Instant — Adventure",
+     "uri": "https://api.scryfall.com/cards/e77a8fd4-af5f-42b3-a87e-788baf2562dd"
+    },
+    {
+     "object": "related_card",
+     "id": "a4e52634-8502-4b72-950d-eb4c2f6b3bc4",
+     "component": "combo_piece",
+     "name": "Taste of Death",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/a4e52634-8502-4b72-950d-eb4c2f6b3bc4"
+    },
+    {
+     "object": "related_card",
+     "id": "67c77d6f-de14-423c-bf55-0fb289171004",
+     "component": "combo_piece",
+     "name": "Old Flitterfang",
+     "type_line": "Legendary Creature — Rat Faerie",
+     "uri": "https://api.scryfall.com/cards/67c77d6f-de14-423c-bf55-0fb289171004"
+    },
+    {
+     "object": "related_card",
+     "id": "dda5e513-775c-4c5e-b9dc-cb836ca8cb8c",
+     "component": "combo_piece",
+     "name": "Survivor's Med Kit",
+     "type_line": "Artifact",
+     "uri": "https://api.scryfall.com/cards/dda5e513-775c-4c5e-b9dc-cb836ca8cb8c"
+    },
+    {
+     "object": "related_card",
+     "id": "e0c48102-e213-4188-a2a7-5a9adae3f693",
+     "component": "combo_piece",
+     "name": "Astrid Peth",
+     "type_line": "Legendary Creature — Human",
+     "uri": "https://api.scryfall.com/cards/e0c48102-e213-4188-a2a7-5a9adae3f693"
+    },
+    {
+     "object": "related_card",
+     "id": "3b583cc8-95e6-4772-afe3-d405b65836e0",
+     "component": "combo_piece",
+     "name": "Gingerbread Cabin",
+     "type_line": "Land — Forest",
+     "uri": "https://api.scryfall.com/cards/3b583cc8-95e6-4772-afe3-d405b65836e0"
+    },
+    {
+     "object": "related_card",
+     "id": "b82c20ad-0f69-4822-ae76-770832cccdf7",
+     "component": "combo_piece",
+     "name": "Pawpatch Formation",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/b82c20ad-0f69-4822-ae76-770832cccdf7"
+    },
+    {
+     "object": "related_card",
+     "id": "bba5e81d-fcdd-4c26-a83f-3ee48f23ac6f",
+     "component": "combo_piece",
+     "name": "Meriadoc Brandybuck",
+     "type_line": "Legendary Creature — Halfling Citizen",
+     "uri": "https://api.scryfall.com/cards/bba5e81d-fcdd-4c26-a83f-3ee48f23ac6f"
+    }
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "not_legal",
+    "timeless": "not_legal",
+    "gladiator": "not_legal",
+    "pioneer": "not_legal",
+    "modern": "not_legal",
+    "legacy": "not_legal",
+    "pauper": "not_legal",
+    "vintage": "not_legal",
+    "penny": "not_legal",
+    "commander": "not_legal",
+    "oathbreaker": "not_legal",
+    "standardbrawl": "not_legal",
+    "brawl": "not_legal",
+    "competitivebrawl": "not_legal",
+    "alchemy": "not_legal",
+    "paupercommander": "not_legal",
+    "duel": "not_legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set": "tblb",
+   "set_name": "Bloomburrow Tokens",
+   "set_type": "token",
+   "set_uri": "https://api.scryfall.com/sets/98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atblb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/tblb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/0dce2241-e58b-41d4-b57c-9794fc8ee004/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Aa468338f-635e-4206-89d6-72d723071d45&unique=prints",
+   "collector_number": "27",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "David Frasheski",
+   "artist_ids": [
+    "7e60efde-8efc-4267-89b7-8060e911d7e5"
+   ],
+   "illustration_id": "7c733fd8-6376-4a70-bdf8-c679ee36f232",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false
+  },
+  {
+   "object": "card",
+   "id": "985be507-6125-4db2-b99f-8b61149ffeeb",
+   "oracle_id": "d3988ada-5df2-4055-be63-30db40ad3992",
+   "multiverse_ids": [],
+   "tcgplayer_id": 79191,
+   "name": "Centaur",
+   "lang": "en",
+   "released_at": "2014-02-07",
+   "uri": "https://api.scryfall.com/cards/985be507-6125-4db2-b99f-8b61149ffeeb",
+   "scryfall_uri": "https://scryfall.com/card/tbng/8/centaur?utm_source=api",
+   "layout": "token",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T10:45:15Z",
+   "mana_cost": "",
+   "cmc": 0.0,
+   "type_line": "Token Enchantment Creature — Centaur",
+   "oracle_text": "",
+   "power": "3",
+   "toughness": "3",
+   "colors": [
+    "G"
+   ],
+   "color_identity": [
+    "G"
+   ],
+   "keywords": [],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "80856020-f569-4d73-8c44-7b48535a69e8",
+     "component": "combo_piece",
+     "name": "Pheres-Band Raiders",
+     "type_line": "Creature — Centaur Warrior",
+     "uri": "https://api.scryfall.com/cards/80856020-f569-4d73-8c44-7b48535a69e8"
+    },
+    {
+     "object": "related_card",
+     "id": "622e1afc-0d06-4c01-abef-3b3e93bd21c3",
+     "component": "combo_piece",
+     "name": "Fated Intervention",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/622e1afc-0d06-4c01-abef-3b3e93bd21c3"
+    },
+    {
+     "object": "related_card",
+     "id": "985be507-6125-4db2-b99f-8b61149ffeeb",
+     "component": "token",
+     "name": "Centaur",
+     "type_line": "Token Enchantment Creature — Centaur",
+     "uri": "https://api.scryfall.com/cards/985be507-6125-4db2-b99f-8b61149ffeeb"
+    }
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "not_legal",
+    "timeless": "not_legal",
+    "gladiator": "not_legal",
+    "pioneer": "not_legal",
+    "modern": "not_legal",
+    "legacy": "not_legal",
+    "pauper": "not_legal",
+    "vintage": "not_legal",
+    "penny": "not_legal",
+    "commander": "not_legal",
+    "oathbreaker": "not_legal",
+    "standardbrawl": "not_legal",
+    "brawl": "not_legal",
+    "competitivebrawl": "not_legal",
+    "alchemy": "not_legal",
+    "paupercommander": "not_legal",
+    "duel": "not_legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": false,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "81dd6941-9598-43ab-abd7-fd5f2b71b171",
+   "set": "tbng",
+   "set_name": "Born of the Gods Tokens",
+   "set_type": "token",
+   "set_uri": "https://api.scryfall.com/sets/81dd6941-9598-43ab-abd7-fd5f2b71b171",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atbng&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/tbng?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/985be507-6125-4db2-b99f-8b61149ffeeb/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ad3988ada-5df2-4055-be63-30db40ad3992&unique=prints",
+   "collector_number": "8",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Ryan Barger",
+   "artist_ids": [
+    "a4e0102e-bbeb-497c-babc-1c0741fea914"
+   ],
+   "illustration_id": "30aa5b54-e06d-4e09-be1d-089494075d4a",
+   "border_color": "black",
+   "frame": "2003",
+   "frame_effects": [
+    "enchantment"
+   ],
+   "full_art": false,
+   "textless": false,
+   "booster": true,
+   "story_spotlight": false,
+   "promo_types": [
+    "setpromo"
+   ]
+  },
+  {
+   "object": "card",
+   "id": "d9bb0a91-b73e-465b-8c0e-50fc28e66fda",
+   "oracle_id": "50c2fc3e-dc2d-43c4-b2e5-d0d72889e61b",
+   "multiverse_ids": [],
+   "name": "Snail",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/d9bb0a91-b73e-465b-8c0e-50fc28e66fda",
+   "scryfall_uri": "https://scryfall.com/card/tblb/14/snail?utm_source=api",
+   "layout": "token",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:29:27Z",
+   "mana_cost": "",
+   "cmc": 0.0,
+   "type_line": "Token Creature — Snail",
+   "oracle_text": "",
+   "power": "1",
+   "toughness": "1",
+   "colors": [
+    "B"
+   ],
+   "color_identity": [
+    "B"
+   ],
+   "keywords": [],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "d9bb0a91-b73e-465b-8c0e-50fc28e66fda",
+     "component": "token",
+     "name": "Snail",
+     "type_line": "Token Creature — Snail",
+     "uri": "https://api.scryfall.com/cards/d9bb0a91-b73e-465b-8c0e-50fc28e66fda"
+    },
+    {
+     "object": "related_card",
+     "id": "02e7e6af-1820-472a-a5de-28640b7eb702",
+     "component": "combo_piece",
+     "name": "Wick, the Whorled Mind",
+     "type_line": "Legendary Creature — Rat Warlock",
+     "uri": "https://api.scryfall.com/cards/02e7e6af-1820-472a-a5de-28640b7eb702"
+    }
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "not_legal",
+    "timeless": "not_legal",
+    "gladiator": "not_legal",
+    "pioneer": "not_legal",
+    "modern": "not_legal",
+    "legacy": "not_legal",
+    "pauper": "not_legal",
+    "vintage": "not_legal",
+    "penny": "not_legal",
+    "commander": "not_legal",
+    "oathbreaker": "not_legal",
+    "standardbrawl": "not_legal",
+    "brawl": "not_legal",
+    "competitivebrawl": "not_legal",
+    "alchemy": "not_legal",
+    "paupercommander": "not_legal",
+    "duel": "not_legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set": "tblb",
+   "set_name": "Bloomburrow Tokens",
+   "set_type": "token",
+   "set_uri": "https://api.scryfall.com/sets/98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atblb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/tblb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/d9bb0a91-b73e-465b-8c0e-50fc28e66fda/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A50c2fc3e-dc2d-43c4-b2e5-d0d72889e61b&unique=prints",
+   "collector_number": "14",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Steven Russell Black",
+   "artist_ids": [
+    "bce268fd-2967-4927-b79e-d8289badc6ed"
+   ],
+   "illustration_id": "8ba55d47-dc11-47a5-932f-b1de463677eb",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false
+  },
+  {
+   "object": "card",
+   "id": "de0d6700-49f0-4233-97ba-cef7821c30ed",
+   "oracle_id": "bdb03306-355c-41e5-96bc-f60483e59b2a",
+   "multiverse_ids": [],
+   "name": "Fish",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/de0d6700-49f0-4233-97ba-cef7821c30ed",
+   "scryfall_uri": "https://scryfall.com/card/tblb/7/fish?utm_source=api",
+   "layout": "token",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:29:31Z",
+   "mana_cost": "",
+   "cmc": 0.0,
+   "type_line": "Token Creature — Fish",
+   "oracle_text": "",
+   "power": "1",
+   "toughness": "1",
+   "colors": [
+    "U"
+   ],
+   "color_identity": [
+    "U"
+   ],
+   "keywords": [],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "86c65c7f-c440-482d-964d-175c75ca4458",
+     "component": "combo_piece",
+     "name": "Beza, the Bounding Spring",
+     "type_line": "Legendary Creature — Elemental Elk",
+     "uri": "https://api.scryfall.com/cards/86c65c7f-c440-482d-964d-175c75ca4458"
+    },
+    {
+     "object": "related_card",
+     "id": "7e24fe6a-607b-49b8-9fca-cecb1e40de7f",
+     "component": "combo_piece",
+     "name": "Mind Spiral",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/7e24fe6a-607b-49b8-9fca-cecb1e40de7f"
+    },
+    {
+     "object": "related_card",
+     "id": "c95ab836-3277-4223-9aaa-ef2c77256b65",
+     "component": "combo_piece",
+     "name": "Fishing Pole",
+     "type_line": "Artifact — Equipment",
+     "uri": "https://api.scryfall.com/cards/c95ab836-3277-4223-9aaa-ef2c77256b65"
+    },
+    {
+     "object": "related_card",
+     "id": "c23d8e96-b972-4c6c-b0c4-b6627621f048",
+     "component": "combo_piece",
+     "name": "Starforged Sword",
+     "type_line": "Artifact — Equipment",
+     "uri": "https://api.scryfall.com/cards/c23d8e96-b972-4c6c-b0c4-b6627621f048"
+    },
+    {
+     "object": "related_card",
+     "id": "1086e826-94b8-4398-8a38-d8eacca56a43",
+     "component": "combo_piece",
+     "name": "Parting Gust",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/1086e826-94b8-4398-8a38-d8eacca56a43"
+    },
+    {
+     "object": "related_card",
+     "id": "47f0e0b9-d137-46ac-a6e4-13a529e30bb5",
+     "component": "combo_piece",
+     "name": "Fisher's Talent",
+     "type_line": "Enchantment — Class",
+     "uri": "https://api.scryfall.com/cards/47f0e0b9-d137-46ac-a6e4-13a529e30bb5"
+    },
+    {
+     "object": "related_card",
+     "id": "2136c09b-f27d-40f1-b3fd-44a399d1d021",
+     "component": "combo_piece",
+     "name": "Frost Fair Lure Fish",
+     "type_line": "Creature — Fish",
+     "uri": "https://api.scryfall.com/cards/2136c09b-f27d-40f1-b3fd-44a399d1d021"
+    },
+    {
+     "object": "related_card",
+     "id": "b2a1b5b3-8d7a-4614-b7f9-d13db5654d03",
+     "component": "combo_piece",
+     "name": "Fishing Gear",
+     "type_line": "Artifact — Equipment",
+     "uri": "https://api.scryfall.com/cards/b2a1b5b3-8d7a-4614-b7f9-d13db5654d03"
+    },
+    {
+     "object": "related_card",
+     "id": "50b9575a-53d9-4df7-b86c-cda021107d3f",
+     "component": "combo_piece",
+     "name": "Into the Flood Maw",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/50b9575a-53d9-4df7-b86c-cda021107d3f"
+    },
+    {
+     "object": "related_card",
+     "id": "9f46fbc3-ce49-463e-bac5-61ddd0962e97",
+     "component": "combo_piece",
+     "name": "Fountainport",
+     "type_line": "Land",
+     "uri": "https://api.scryfall.com/cards/9f46fbc3-ce49-463e-bac5-61ddd0962e97"
+    },
+    {
+     "object": "related_card",
+     "id": "6d963080-b3ec-467d-82f7-39db6ecd6bbc",
+     "component": "combo_piece",
+     "name": "Sazacap's Brew",
+     "type_line": "Instant",
+     "uri": "https://api.scryfall.com/cards/6d963080-b3ec-467d-82f7-39db6ecd6bbc"
+    },
+    {
+     "object": "related_card",
+     "id": "c7ef748c-b5e5-4e7d-bf2e-d3e6c08edb42",
+     "component": "combo_piece",
+     "name": "Longstalk Brawl",
+     "type_line": "Sorcery",
+     "uri": "https://api.scryfall.com/cards/c7ef748c-b5e5-4e7d-bf2e-d3e6c08edb42"
+    },
+    {
+     "object": "related_card",
+     "id": "de0d6700-49f0-4233-97ba-cef7821c30ed",
+     "component": "token",
+     "name": "Fish",
+     "type_line": "Token Creature — Fish",
+     "uri": "https://api.scryfall.com/cards/de0d6700-49f0-4233-97ba-cef7821c30ed"
+    },
+    {
+     "object": "related_card",
+     "id": "c7fb7f4f-2153-4527-8f11-adbf508d3533",
+     "component": "combo_piece",
+     "name": "Knightfisher",
+     "type_line": "Creature — Bird Knight",
+     "uri": "https://api.scryfall.com/cards/c7fb7f4f-2153-4527-8f11-adbf508d3533"
+    }
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "not_legal",
+    "timeless": "not_legal",
+    "gladiator": "not_legal",
+    "pioneer": "not_legal",
+    "modern": "not_legal",
+    "legacy": "not_legal",
+    "pauper": "not_legal",
+    "vintage": "not_legal",
+    "penny": "not_legal",
+    "commander": "not_legal",
+    "oathbreaker": "not_legal",
+    "standardbrawl": "not_legal",
+    "brawl": "not_legal",
+    "competitivebrawl": "not_legal",
+    "alchemy": "not_legal",
+    "paupercommander": "not_legal",
+    "duel": "not_legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": true,
+   "variation": false,
+   "set_id": "98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set": "tblb",
+   "set_name": "Bloomburrow Tokens",
+   "set_type": "token",
+   "set_uri": "https://api.scryfall.com/sets/98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atblb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/tblb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/de0d6700-49f0-4233-97ba-cef7821c30ed/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Abdb03306-355c-41e5-96bc-f60483e59b2a&unique=prints",
+   "collector_number": "7",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Rhonda Libbey",
+   "artist_ids": [
+    "9b3fac11-04d4-4896-8005-ad255df63704"
+   ],
+   "illustration_id": "9172e740-6666-4480-83c8-9f5c4120046e",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false
+  },
+  {
+   "object": "card",
+   "id": "e2dd6325-e3d8-4816-ac52-8838c12b4922",
+   "oracle_id": "93793ab5-3c85-4c78-95c2-c228e39bd930",
+   "multiverse_ids": [],
+   "name": "Rust-Shield Rampager",
+   "lang": "en",
+   "released_at": "2024-08-02",
+   "uri": "https://api.scryfall.com/cards/e2dd6325-e3d8-4816-ac52-8838c12b4922",
+   "scryfall_uri": "https://scryfall.com/card/tblb/22/rust-shield-rampager?utm_source=api",
+   "layout": "token",
+   "highres_image": true,
+   "image_status": "highres_scan",
+   "image_updated_at": "2026-07-13T02:29:26Z",
+   "mana_cost": "{3}{G}",
+   "cmc": 4.0,
+   "type_line": "Token Creature — Raccoon Warrior",
+   "oracle_text": "This creature can't be blocked by creatures with power 2 or less.\n(This token's mana cost is {3}{G}.)",
+   "power": "1",
+   "toughness": "1",
+   "colors": [
+    "G"
+   ],
+   "color_identity": [
+    "G"
+   ],
+   "keywords": [],
+   "all_parts": [
+    {
+     "object": "related_card",
+     "id": "c96b01f5-83de-4237-a68d-f946c53e31a6",
+     "component": "combo_piece",
+     "name": "Rust-Shield Rampager",
+     "type_line": "Creature — Raccoon Warrior",
+     "uri": "https://api.scryfall.com/cards/c96b01f5-83de-4237-a68d-f946c53e31a6"
+    },
+    {
+     "object": "related_card",
+     "id": "e2dd6325-e3d8-4816-ac52-8838c12b4922",
+     "component": "token",
+     "name": "Rust-Shield Rampager",
+     "type_line": "Token Creature — Raccoon Warrior",
+     "uri": "https://api.scryfall.com/cards/e2dd6325-e3d8-4816-ac52-8838c12b4922"
+    }
+   ],
+   "legalities": {
+    "standard": "not_legal",
+    "future": "not_legal",
+    "historic": "not_legal",
+    "timeless": "not_legal",
+    "gladiator": "not_legal",
+    "pioneer": "not_legal",
+    "modern": "not_legal",
+    "legacy": "not_legal",
+    "pauper": "not_legal",
+    "vintage": "not_legal",
+    "penny": "not_legal",
+    "commander": "not_legal",
+    "oathbreaker": "not_legal",
+    "standardbrawl": "not_legal",
+    "brawl": "not_legal",
+    "competitivebrawl": "not_legal",
+    "alchemy": "not_legal",
+    "paupercommander": "not_legal",
+    "duel": "not_legal",
+    "oldschool": "not_legal",
+    "premodern": "not_legal",
+    "predh": "not_legal",
+    "tlr": "not_legal"
+   },
+   "games": [
+    "paper"
+   ],
+   "reserved": false,
+   "game_changer": false,
+   "foil": true,
+   "nonfoil": true,
+   "finishes": [
+    "nonfoil",
+    "foil"
+   ],
+   "oversized": false,
+   "promo": false,
+   "reprint": false,
+   "variation": false,
+   "set_id": "98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set": "tblb",
+   "set_name": "Bloomburrow Tokens",
+   "set_type": "token",
+   "set_uri": "https://api.scryfall.com/sets/98ffb0ad-639e-4861-b81d-dd5ae734badf",
+   "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atblb&unique=prints",
+   "scryfall_set_uri": "https://scryfall.com/sets/tblb?utm_source=api",
+   "rulings_uri": "https://api.scryfall.com/cards/e2dd6325-e3d8-4816-ac52-8838c12b4922/rulings",
+   "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A93793ab5-3c85-4c78-95c2-c228e39bd930&unique=prints",
+   "collector_number": "22",
+   "digital": false,
+   "rarity": "common",
+   "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+   "artist": "Steve Ellis",
+   "artist_ids": [
+    "39d8411c-2187-426c-8ad3-d4f688b22db1"
+   ],
+   "illustration_id": "8eb96b42-c31d-4621-a14b-66750d6fb3e4",
+   "border_color": "black",
+   "frame": "2015",
+   "full_art": false,
+   "textless": false,
+   "booster": false,
+   "story_spotlight": false
+  }
+ ],
+ "not_found": []
+}
