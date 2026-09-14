@@ -2,6 +2,9 @@
 exports/
 *.tmp
 
+# The collection view is derived and regenerated on every run of cards enrich/refresh.
+data/collection_view.tsv
+
 .venv/
 __pycache__/
 *.pyc

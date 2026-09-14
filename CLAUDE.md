@@ -11,6 +11,7 @@ ticket before touching a module.
 ```sh
 uv sync                                   # once; installs dev tools too
 uv run deck-composer ingest exports/ManaBox_Collection.csv
+uv run deck-composer cards enrich         # fetch what the catalog lacks, then rebuild the view
 uv run pytest
 uv run ruff check . && uv run ruff format --check .
 uv run pyright
@@ -36,6 +37,8 @@ uv run pyright
 |---|---|---|
 | `exports/` | ManaBox exports (carry prices) | never |
 | `data/collection.json` | the **collection**: lots from the last export, hashed by its bytes | yes |
+| `data/catalog.json` | the **catalog**: Scryfall facts for every owned printing and related token | yes |
+| `data/collection_view.tsv` | the **view**: one line per owned card, derived from the collection and catalog | never |
 | `tests/fixtures/` | rows cut from the real export, prices blanked; goldens | yes |
 
 ## Module ownership
@@ -43,7 +46,11 @@ uv run pyright
 | Module | Owns exclusively |
 |---|---|
 | `ingest.py` | The ManaBox export format: required columns, row validation, normalization |
-| `collection.py` | The collection file: schema, read, write, diff by **lot key**, sum by name |
+| `collection.py` | The collection file: schema, read, write, diff by **lot key**, sum by name (including the ownership sums, scoped by binder) |
+| `scryfall.py` | The Scryfall client and projection: fetching, batching, layout and legality vocabularies, mapping a Scryfall object to a card or token record |
+| `catalog.py` | The catalog file: records, schema, read, write, merge and refresh semantics, coverage and name-mismatch checks |
+| `view.py` | The collection view file: rendering rules, write |
+| `cards.py` | The `enrich`, `refresh` and `resolve` operations: orchestrating collection, catalog and view |
 | `cli.py` | Argument parsing, JSON rendering, exit codes, project root |
 
 A module never parses another module's format. Card data (#3) and the table
