@@ -11,10 +11,12 @@ import argparse
 import json
 import sys
 from collections.abc import Sequence
+from dataclasses import dataclass
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from typing import Any
 
+from deck_composer import cards, scryfall
 from deck_composer.errors import ToolError
 from deck_composer.ingest import ingest
 
@@ -48,6 +50,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--version", action="version", version=f"%(prog)s {_package_version()}")
     subparsers = parser.add_subparsers(dest="command", required=True, metavar="<subcommand>")
     _add_ingest(subparsers)
+    _add_cards(subparsers)
     return parser
 
 
@@ -69,6 +72,134 @@ def _run_ingest(args: argparse.Namespace) -> dict[str, Any]:
     root = project_root()
     out: Path = args.out if args.out is not None else root / "data" / "collection.json"
     return ingest(args.export, out, display_path=_display(out, root)).to_dict()
+
+
+def _add_cards(subparsers: argparse._SubParsersAction[argparse.ArgumentParser]) -> None:
+    parser = subparsers.add_parser(
+        "cards", help="Card facts: build the catalog and rebuild the collection view."
+    )
+    operations = parser.add_subparsers(dest="operation", required=True, metavar="<operation>")
+
+    enrich = operations.add_parser(
+        "enrich", help="Fetch what the catalog lacks for the collection, then rebuild the view."
+    )
+    enrich.add_argument(
+        "--exclude-binder",
+        action="append",
+        default=None,
+        metavar="NAME",
+        help="Leave every lot in this binder out of the view. Repeatable.",
+    )
+    _add_catalog_paths(enrich)
+    enrich.set_defaults(handler=_run_enrich)
+
+    refresh = operations.add_parser(
+        "refresh", help="Re-fetch every catalog entry and report what changed."
+    )
+    _add_catalog_paths(refresh)
+    refresh.set_defaults(handler=_run_refresh)
+
+    resolve = operations.add_parser(
+        "resolve", help="Turn names into exact Scryfall names, one suggestion per miss."
+    )
+    resolve.add_argument("names", nargs="*", metavar="NAME", help="A name to resolve.")
+    resolve.add_argument(
+        "--file",
+        type=Path,
+        default=None,
+        help="Read the names from this file, one per line; blank and # lines are ignored.",
+    )
+    _add_catalog_paths(resolve)
+    resolve.set_defaults(handler=_run_resolve, usage_parser=resolve)
+
+
+def _add_catalog_paths(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--catalog",
+        type=Path,
+        default=None,
+        help="Where the catalog lives. Default: data/catalog.json under the project root.",
+    )
+    parser.add_argument(
+        "--view",
+        type=Path,
+        default=None,
+        help="Where to write the view. Default: data/collection_view.tsv under the project root.",
+    )
+
+
+@dataclass(frozen=True, slots=True)
+class _CardPaths:
+    """The three files every `cards` operation touches, with the root-relative
+    spellings the success object reports (R16)."""
+
+    collection: Path
+    catalog: Path
+    view: Path
+    catalog_display: str
+    view_display: str
+
+
+def _card_paths(args: argparse.Namespace) -> _CardPaths:
+    root = project_root()
+    catalog: Path = args.catalog if args.catalog is not None else root / "data" / "catalog.json"
+    view: Path = args.view if args.view is not None else root / "data" / "collection_view.tsv"
+    return _CardPaths(
+        collection=root / "data" / "collection.json",
+        catalog=catalog,
+        view=view,
+        catalog_display=_display(catalog, root),
+        view_display=_display(view, root),
+    )
+
+
+def _client() -> scryfall.Client:
+    return scryfall.Client(version=_package_version())
+
+
+def _run_enrich(args: argparse.Namespace) -> dict[str, Any]:
+    paths = _card_paths(args)
+    return cards.enrich(
+        paths.collection,
+        paths.catalog,
+        paths.view,
+        exclude_binders=tuple(args.exclude_binder or ()),
+        client=_client(),
+        catalog_display=paths.catalog_display,
+        view_display=paths.view_display,
+    ).to_dict()
+
+
+def _run_refresh(args: argparse.Namespace) -> dict[str, Any]:
+    paths = _card_paths(args)
+    return cards.refresh(
+        paths.collection,
+        paths.catalog,
+        paths.view,
+        client=_client(),
+        catalog_display=paths.catalog_display,
+        view_display=paths.view_display,
+    ).to_dict()
+
+
+def _run_resolve(args: argparse.Namespace) -> dict[str, Any]:
+    names = list(args.names)
+    if not names and args.file is None:
+        args.usage_parser.error("give at least one NAME, or --file PATH holding one name per line")
+    paths = _card_paths(args)
+    if args.file is not None:
+        names.extend(cards.names_from_file(args.file))
+    if not names:
+        args.usage_parser.error("the file holds no name; give at least one NAME per line")
+    return cards.resolve(
+        names,
+        paths.collection,
+        paths.catalog,
+        paths.view,
+        client=_client(),
+        catalog_display=paths.catalog_display,
+        view_display=paths.view_display,
+    ).to_dict()
 
 
 def _display(path: Path, root: Path) -> str:
