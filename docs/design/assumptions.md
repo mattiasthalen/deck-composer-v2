@@ -1,6 +1,6 @@
 # Assumptions record
 
-Standing assumptions the design depends on, each with the observation that would show it stopped holding, plus the facts the project has measured. Maintained by design interviews. The system design that produced the current entries is issue #1.
+Standing assumptions the design depends on, each with the observation that would show it stopped holding, plus the facts the project has measured. Maintained by design interviews. The system design that produced the first entries is issue #1; the scaffold and ingest interview (issue #2) added A15 to A18 and the second block of measured facts.
 
 An assumption is a statement the design treats as true without the code enforcing it. When one stops holding, every branch that hangs off it needs a second look, so each entry names the observation that would falsify it.
 
@@ -8,7 +8,7 @@ An assumption is a statement the design treats as true without the code enforcin
 
 | ID | Assumption | Area | Status | You would know it stopped holding when |
 |---|---|---|---|---|
-| A1 | Every ManaBox export row carries a Scryfall ID. | Ingest | Verified on 869 of 869 rows, 2026-09-14 | A row without one, such as a custom or proxy card. Ingest fails loudly. |
+| A1 | Every ManaBox export row carries a Scryfall ID. | Ingest | Verified on 869 of 869 rows, 2026-09-14 (#1, re-checked in #2) | A row without one, such as a custom or proxy card. Ingest fails loudly. |
 | A2 | Scryfall is the only card data source needed. | Card data | Holds. Combos are composer judgment; bracket lists beyond the Game Changer flag live in the local rules file. | A rule needs data Scryfall lacks. |
 | A3 | One table is sleeved at a time, so tables are independent selections from the whole collection. | Table store | Confirmed by the owner | Two tables sleeved at once. Use the exclude-by-table scoping filter. |
 | A4 | Basic lands are tracked in the export in real quantities. | Ingest, analyzer | Verified, 223 basics | n/a |
@@ -22,6 +22,10 @@ An assumption is a statement the design treats as true without the code enforcin
 | A12 | "A good match" against given decks means a fair opponent at the table's level, not a hard counter. | Composer | Confirmed by no objection | The owner asks for counters by default. |
 | A13 | Scryfall's `game_changer` flag tracks WotC's Game Changer list. | Analyzer | Field verified present, 2026-09-14 | WotC updates the list and Scryfall lags. The rules file can override. |
 | A14 | No partner or Background commanders are owned, so the analyzer's commander check handles single commanders only. | Analyzer | Verified against the 2026-08-26 export | A partner or Background card enters the collection. The check is written so adding them is a local change. |
+| A15 | The ManaBox Name column equals the exact Scryfall name. | Ingest, card data | Verified on 869 of 869 rows against Scryfall by ID, 2026-09-14 | Card data reports a lot whose name differs from the catalog name for its Scryfall ID. The collection keeps the exported name; the catalog is authoritative. |
+| A16 | Every export is the whole collection, never a single binder. | Ingest | Owner practice. ManaBox allows per-binder export; the owner never uses it | A change report showing mass removals. Re-export the whole collection and ingest again. |
+| A17 | Cards placed in ManaBox decks appear in the collection export with Binder Type `deck` and the deck's name as Binder Name. | Ingest, table store, composer | Verified 2026-09-14 on a second export: the deck "Wick, the Whorled Mind" appears as 70 rows of type `deck`; the cards left the binder rows, total cards unchanged | A re-export after creating a ManaBox deck lacks those rows or carries another type. |
+| A18 | The Added timestamp is stable per row across exports. | Ingest | Holds across two exports: 0 of 813 lots present in both changed Added | A re-export whose diff changes Added on otherwise unchanged lots. Then drop the column; the lot key already excludes it. |
 
 ## Invalidated
 
@@ -51,3 +55,36 @@ Source: the owner's ManaBox collection export dated 2026-08-26, resolved against
 | Names containing `//` | 25 |
 | Scryfall collection endpoint | Resolves 75 identifiers per request; the whole collection took 10 requests |
 | Export columns | Binder Name, Binder Type, Name, Set code, Set name, Collector number, Foil, Rarity, Quantity, ManaBox ID, Scryfall ID, Purchase price, Misprint, Altered, Condition, Language, Purchase price currency, Added |
+
+Source: the same export, profiled during the scaffold and ingest interview (issue #2), 2026-09-14.
+
+| Fact | Value |
+|---|---|
+| Encoding and line endings | ASCII, no BOM, CRLF |
+| Foil values | normal 774, foil 95 |
+| Condition values | mint 457, near_mint 412 |
+| Language values | en only |
+| Binder Type values | binder only |
+| Misprint, Altered | false on every row |
+| Added format | ISO-8601 UTC instant with milliseconds and `Z`; range 2026-07-22 to 2026-08-26 |
+| Quantity | integers 1 to 15 |
+| Set code case | uppercase in the export, lowercase on Scryfall; identical after lowercasing |
+| Collector numbers | all numeric, identical to Scryfall |
+| Duplicate lot keys | 0; no two rows share Scryfall ID, foil, condition, language and binder |
+| ManaBox ID | one per printing, 676 distinct |
+| Names containing commas | 23 |
+| Names containing `//` | 25 rows, 24 names; layouts prepare 20 rows, transform 5 |
+| Layouts of owned printings | normal 608, token 34, prepare 19, class 9, transform 5, case 1 |
+| T-prefixed set codes | 8. TBLB, TFDN, TINR, TMKM, TSOC, TSOS are token sets; THS and TDM are expansions, so the prefix is not a token test |
+| Purchase price | empty on 13 rows; currency SEK |
+
+Source: the owner's second export, 2026-09-14, after moving a deck into ManaBox. Ingested as collection hash `sha256:247cce4524b28f3764be2acb82de99c970a73abd71f0cfe2937f278b864a49ba`.
+
+| Fact | Value |
+|---|---|
+| Rows / physical cards / distinct names | 883 / 1354 / 603 |
+| Binders | 2: "OmniHive: Secrets of Strixhaven" (`binder`, 813 rows, 1,284 cards) and "Wick, the Whorled Mind" (`deck`, 70 rows, 70 cards, 70 names) |
+| Header, encoding, line endings | identical to the first export |
+| Change report against the first export | lots added 70, removed 56, quantity changed 14; names added 0, removed 0, quantity changed 0; cards delta 0 |
+| Printings split between the binder and the deck | 14 |
+| Added values on lots present in both exports | unchanged, 813 of 813 |

@@ -9,7 +9,7 @@ Maintenance rules, so the file stays useful:
 - Target size is roughly 20 to 30 entries. Past that, adding one means arguing another out.
 - Record where each entry came from, so a later reader can find the decision behind it.
 
-All current entries come from the system design interview of 2026-09-14, captured in issue #1.
+Entries marked #1 come from the system design interview of 2026-09-14 (issue #1). Entries marked #2 come from the scaffold and ingest design interview of the same day (issue #2).
 
 | Term | Meaning | Since |
 |---|---|---|
@@ -32,3 +32,7 @@ All current entries come from the system design interview of 2026-09-14, capture
 | draft, accepted | Table states. Draft while composing and steering; accepted once the owner says so. Accepted tables change only through improve. | #1 |
 | improve | The explicit operation that changes an accepted table and emits swap lists. | #1 |
 | rules version | Identifier of the bracket and format rules file a table was built under. | #1 |
+| export | The ManaBox collection CSV that ingest reads. Never committed. Not a decklist (artifacts produce those) and not a ManaBox deck export. | #2 |
+| collection hash | sha256 of the raw export bytes, written into the collection file and copied into table metadata. Identifies an ownership snapshot independent of the collection file's format. | #2 |
+| lot key | Scryfall ID, foil, condition, language, binder name and binder type. The identity the change report diffs on. Added is excluded. | #2 |
+| change report | Ingest output comparing the new collection with the existing collection file by lot key. Never a comparison of two exports. | #2 |

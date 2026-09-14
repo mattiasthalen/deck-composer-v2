@@ -1,0 +1,10 @@
+# A ManaBox export carries purchase prices. It is never committed; drop it in exports/.
+exports/
+*.tmp
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
