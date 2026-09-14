@@ -33,7 +33,7 @@ def render(
     writer = csv.writer(out, lineterminator=newline, delimiter=delimiter)
     writer.writerow(header)
     writer.writerows(rows)
-    return ("﻿" if bom else "") + out.getvalue()
+    return ("\ufeff" if bom else "") + out.getvalue()
 
 
 def write_export(path: Path, header: Header, rows: Rows, **render_options: Any) -> Path:
