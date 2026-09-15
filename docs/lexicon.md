@@ -9,7 +9,7 @@ Maintenance rules, so the file stays useful:
 - Target size is roughly 20 to 30 entries. Past that, adding one means arguing another out.
 - Record where each entry came from, so a later reader can find the decision behind it.
 
-Entries marked #1 come from the system design interview of 2026-09-14 (issue #1). Entries marked #2 come from the scaffold and ingest design interview of the same day (issue #2). Entries marked #3 come from the card data design interview of the same day (issue #3); two inherited entries changed there and say so.
+Entries marked #1 come from the system design interview of 2026-09-14 (issue #1). Entries marked #2 come from the scaffold and ingest design interview of the same day (issue #2). Entries marked #3 come from the card data design interview of the same day (issue #3); two inherited entries changed there and say so. Entries marked #4 come from the deck analyzer design interview of the same day (issue #4); two inherited entries changed there and say so.
 
 | Term | Meaning | Since |
 |---|---|---|
@@ -19,7 +19,7 @@ Entries marked #1 come from the system design interview of 2026-09-14 (issue #1)
 | collection | The normalized ownership record derived from one ManaBox export. Price removed, binder retained. Authoritative for ownership. | #1 |
 | lot | One export row: a printing with foil, condition, language, binder and quantity. | #1 |
 | printing | One Scryfall ID. | #1 |
-| card | One exact Scryfall name, both faces included for double-faced cards. The unit of singleton and of every deck reference. Physical attributes never matter to composition. | #1 |
+| card | One exact Scryfall name, both faces included for double-faced cards. The unit of singleton and of every deck reference. Physical attributes never matter to composition. Its types are decided by the front face, the part of `type_line` before `//`; its colour identity by both faces. | #1, changed #4 |
 | catalog | Scryfall-derived facts for every card the project has seen, owned or not. Keyed by card, the exact Scryfall name, with the printings seen nested under each card; tokens keyed by oracle_id. Never carries ownership; a union that only grows. Authoritative for card facts. | #1, changed #3 |
 | collection view | The derived one-line-per-owned-card TSV the composer reads, built from the collection and the catalog by every `cards` operation. Regenerable, never committed. | #1, changed #3 |
 | composer | The Claude Code skill that interprets requests, chooses commanders, builds decks against the analyzer, reviews, presents and interviews the owner. | #1 |
@@ -31,7 +31,7 @@ Entries marked #1 come from the system design interview of 2026-09-14 (issue #1)
 | maybeboard | In this project, the decklist section holding unowned cards that would improve the deck. ManaBox's own meaning of the word is broader. | #1 |
 | draft, accepted | Table states. Draft while composing and steering; accepted once the owner says so. Accepted tables change only through improve. | #1 |
 | improve | The explicit operation that changes an accepted table and emits swap lists. | #1 |
-| rules version | Identifier of the bracket and format rules file a table was built under. | #1 |
+| rules version | The `version` declared in `data/rules.json`, an ISO date the owner bumps on every edit. Every table records it beside `rules_hash`, the sha256 of the file's bytes, which catches an edit nobody bumped. | #1, changed #4 |
 | export | The ManaBox collection CSV that ingest reads. Never committed. Not a decklist (artifacts produce those) and not a ManaBox deck export. | #2 |
 | collection hash | sha256 of the raw export bytes, written into the collection file and copied into table metadata. Identifies an ownership snapshot independent of the collection file's format. | #2 |
 | lot key | Scryfall ID, foil, condition, language, binder name and binder type. The identity the change report diffs on. Added is excluded. | #2 |
@@ -40,3 +40,8 @@ Entries marked #1 come from the system design interview of 2026-09-14 (issue #1)
 | enrich | The `cards` operation that fetches only what the catalog lacks for the current collection, never touching an existing entry, and rebuilds the collection view. Restores coverage: every lot's printing is in the catalog. | #3 |
 | refresh | The `cards` operation that re-fetches every catalog entry and reports what changed. Restores freshness. Never automatic. | #3 |
 | resolve | The `cards` operation that turns names into exact Scryfall names, from the catalog first and Scryfall second, reporting each miss with at most one suggestion that is never persisted. | #3 |
+| deck file | The one canonical JSON file holding a deck: `schema`, `commander` as a list of exact names, `origin`, `mainboard` and `maybeboard` as entries of exact name and quantity. The commander is never repeated in the mainboard. The only deck format any tool parses; the composer normalizes pasted lists into it (ADR-0009). | #4 |
+| reserved deck | A deck file passed to `analyze --reserve`: it consumes the budget according to its origin and is neither analyzed nor reported. How another table's decks are kept out of this one. | #4 |
+| estimated bracket | The lowest bracket whose caps a deck meets, reported for every deck whether or not a bracket was requested. Violations are raised against the requested bracket only. | #4 |
+| category | A named card set defined in the rules file by the Game Changer flag, keywords, type-line and oracle-text patterns, negative patterns, and include and exclude lists of exact names. Brackets cap categories; metrics count them (ADR-0010, ADR-0011). | #4 |
+| theme | What a request asks a table to be about, given to `analyze` as `set:CODE` or `type:SUBTYPE`, repeatable, one set of themes per table. Theme share is its metric. | #4 |

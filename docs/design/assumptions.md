@@ -1,6 +1,6 @@
 # Assumptions record
 
-Standing assumptions the design depends on, each with the observation that would show it stopped holding, plus the facts the project has measured. Maintained by design interviews. The system design that produced the first entries is issue #1; the scaffold and ingest interview (issue #2) added A15 to A18 and the second block of measured facts; the card data interview (issue #3) added A19 to A22, sharpened A7 and A15, and added the Scryfall block of measured facts; A21 fell during the implementation the same day and moved to X3.
+Standing assumptions the design depends on, each with the observation that would show it stopped holding, plus the facts the project has measured. Maintained by design interviews. The system design that produced the first entries is issue #1; the scaffold and ingest interview (issue #2) added A15 to A18 and the second block of measured facts; the card data interview (issue #3) added A19 to A22, sharpened A7 and A15, and added the Scryfall block of measured facts; A21 fell during the implementation the same day and moved to X3; the deck analyzer interview (issue #4) added A23 to A27 and the analyzer block of measured facts.
 
 An assumption is a statement the design treats as true without the code enforcing it. When one stops holding, every branch that hangs off it needs a second look, so each entry names the observation that would falsify it.
 
@@ -29,6 +29,11 @@ An assumption is a statement the design treats as true without the code enforcin
 | A19 | One exact Scryfall name maps to one oracle_id among cards with a card layout. | Card data | Holds for every card seen. Enforced at every catalog build: a collision fails `cards enrich` with `name_collision` | A `name_collision` failure. Known offenders: Unstable variants such as Everythingamajig, six different cards under one name, none owned. Resolution then: a disambiguation rule, decided when it happens. |
 | A20 | Scryfall's collection endpoint resolves every owned printing by Scryfall ID and every exact name. | Card data | Verified 676 of 676 printings, 2026-09-14 | A `printing_not_found` failure on an owned lot, typically a printing Scryfall merged or deleted. Re-scan the card in ManaBox and ingest again. |
 | A22 | Staleness between explicit refreshes is acceptable: legality, the Game Changer flag and edhrec_rank drift only until the owner runs `cards refresh`. | Card data, analyzer | Accepted by the owner, 2026-09-14 | A table built under stale legality, such as a card banned after the last refresh passing the analyzer. Run `cards refresh` before composing when online. |
+| A23 | Bracket criteria are expressible as caps on categories, a maximum count per named card set; chaining and looping of extra turns or combos are judgment, not rules. | Analyzer | Decided in #4 (ADR-0010) against the WotC bracket definitions as read 2026-09-14 | A WotC criterion no count can express. Then the rules file grows a predicate kind, a code change. |
+| A24 | Scryfall's `color_identity` is the game's colour identity for every card: both faces, hybrid and Phyrexian symbols, mana symbols in rules text. | Analyzer | Verified on one card, Wick, the Whorled Mind: `color_identity` B, R, U while `colors` is B | A colour identity dispute at the table traced to the field. Then the analyzer computes it from faces and costs itself. |
+| A25 | Pattern detection generalizes to cards nobody here has seen well enough that a friend's deck gets useful metrics and bracket caps. | Analyzer | Decided in #4 (ADR-0011); unmeasured until the first external deck | Per-card corrections needed after every external deck. Then the patterns are the problem, not the lists. |
+| A26 | A request has one set of themes per table; every deck at the table is measured against the same themes. | Analyzer, composer | Confirmed by the owner, 2026-09-14 | A request asking for a different theme per deck. Then `--theme` moves into the deck file or gets a per-deck form. |
+| A27 | The owner bumps the rules file's `version` on every edit. | Analyzer, table store | Owner practice; `rules_hash` is the backstop | Verify (#6) reporting a changed hash under an unchanged version. |
 
 ## Invalidated
 
@@ -105,3 +110,19 @@ Source: Scryfall, checked live during the card data interview (issue #3), 2026-0
 | `POST /cards/collection` | accepts `id` and `name` identifiers mixed, up to 75 per request; returns `not_found` per identifier; a `name` identifier resolves a face name to the full name |
 | Bulk files, compressed | oracle_cards 24.6 MB, default_cards 78.2 MB, all_cards 392.9 MB, refreshed daily |
 | `game_changer` | present on cards and tokens as a boolean; `edhrec_rank` absent on tokens and on some cards |
+
+Source: the committed catalog (581 cards, 46 tokens) and collection, profiled during the deck analyzer interview (issue #4), 2026-09-14.
+
+| Fact | Value |
+|---|---|
+| Token lots sharing a card's name | 8, all from TBLB: Bushy Bodyguard, Coruscation Mage, Darkstar Augur, Flowerfoot Swordmaster (2 lots), Manifold Mouse, Splash Lasher, Starscape Cleric. Splash Lasher is 3 by name and 1 as a card; `owned_by_name` counts the token lots, the view does not |
+| Legendary creatures among owned cards | 24; legendary non-creatures 4 (Mask of Griselbrand, Nykthos, Shrine to Nyx, Professor Dellian Fel, Ral, Crackling Wit); no owned card says "can be your commander"; no partner |
+| Extra-turn cards, mass land denial | 0 and 0 |
+| "Search your library" cards | 11, most fetching lands (Fabled Passage, Nervous Gardener, Shared Roots, ...) |
+| Rough pattern counts, owned nonland cards | draw 102, removal 75, ramp 33 |
+| Cards stating their own deck limit ("any number of cards named") | 0 |
+| Basic land colour identity | each basic carries its colour: Forest G, Island U, Mountain R, Plains W, Swamp B |
+| Multi-face `type_line` | faces joined by ` // `: prepare 19, class 9, transform 5, case 1 among owned cards |
+| Owned cards without `edhrec_rank` | 7: the five basics, Plant a Sapling // Fully-Grown Treefolk, Prophet of Kruphix |
+| The ManaBox deck "Wick, the Whorled Mind" | 70 rows, 70 cards, its commander among them; Wick's colour identity B, R, U |
+| Test fixture `manabox_base.csv` | 25 rows, 24 names, 40 cards, 1 legendary, Forest 15, Plains 1: cannot hold a legal deck |
