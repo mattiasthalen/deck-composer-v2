@@ -1,6 +1,6 @@
 # ADR-0002 — The collection is one sorted JSON file with an integer schema, regenerated rather than migrated
 
-**Status:** Accepted (2026-09-14) · **Ticket:** [#2](https://github.com/mattiasthalen/deck-composer-v2/issues/2)
+**Status:** Accepted (2026-09-14) · **Superseded in part:** the consequence that per-card ownership calls sum by name, by [ADR-0013](0013-ownership-per-card-joins-through-printings.md) (2026-09-14) · **Ticket:** [#2](https://github.com/mattiasthalen/deck-composer-v2/issues/2)
 
 ## Context
 

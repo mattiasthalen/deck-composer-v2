@@ -1,0 +1,26 @@
+# collection view · collection sha256:0a1d9393164759bf8f8f2b876b80ad6ca46723ff6a36cd9e549c07c7cb841fc8 · catalog refreshed never · scope none
+# derived from data/collection.json and data/catalog.json by deck-composer cards; regenerated on every run, never committed
+name	qty	ci	type	cmc	legal	gc	rank	sets	text
+Arbor Colossus	1	G	Creature — Giant	5	legal		20000	ths	Reach / {3}{G}{G}{G}: Monstrosity 3. / When this creature becomes monstrous, destroy target creature with flying an opponent controls.
+Desperate Farmer // Depraved Harvester	1	B	Creature — Human Peasant // Creature — Human Knight	3	legal		19000	inr	Lifelink / When another creature you control dies, transform this creature. // Lifelink
+Early Winter	1	B	Instant	5	legal		15000	blb	Choose one — / • Exile target creature. / • Target opponent exiles an enchantment they control.
+Fated Intervention	1	G	Instant	5	legal		27000	cp1	Create two 3/3 green Centaur enchantment creature tokens. If it's your turn, scry 2.
+Forest	15	G	Basic Land — Forest	0	legal			fdn	
+Galewind Moose	1	G	Creature — Elemental Elk	6	legal		12000	blb	Flash / Reach, vigilance, trample
+Honorbound Page // Forum's Favor	1	W	Creature — Cat Cleric // Sorcery	4	legal		23000	sos	First strike / This creature enters prepared. // Target creature gets +1/+0 and gains flying until end of turn.
+Lifecreed Duo	1	W	Creature — Bat Bird	2	legal		3800	blb	Flying / Whenever another creature you control enters, you gain 1 life.
+Lupinflower Village	1	W	Land	0	legal		4800	blb	{T}: Add {C}. / {T}: Add {W}. Spend this mana only to cast a creature spell. / {1}{W}, {T}, Sacrifice this land: Look at the top six cards of your library. You may reveal a Bat, Bird, Mouse, or Rabbit card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+Parting Gust	1	W	Instant	2	legal		1700	blb	Gift a tapped Fish / Exile target nontoken creature. If the gift wasn't promised, return that card to the battlefield under its owner's control with a +1/+1 counter on it at the beginning of the next end step.
+Plains	1	W	Basic Land — Plains	0	legal			blb	
+Quick Study	2	U	Instant	3	legal		2700	fdn,sos	Draw two cards.
+Rabid Gnaw	1	R	Instant	2	legal		8100	blb	Target creature you control gets +1/+0 until end of turn. Then it deals damage equal to its power to target creature you don't control.
+Rust-Shield Rampager	1	G	Creature — Raccoon Warrior	4	legal		14000	blb	Offspring {2} / This creature can't be blocked by creatures with power 2 or less.
+Savor	1	B	Instant	2	legal		8900	blb	Target creature gets -2/-2 until end of turn. Create a Food token.
+Sazacap's Brew	1	R	Instant	2	legal		3900	blb	Gift a tapped Fish / As an additional cost to cast this spell, discard a card. / Target player draws two cards. If the gift was promised, target creature you control gets +2/+0 until end of turn.
+Seedpod Squire	2	WU	Creature — Bird Scout	4	legal		21000	blb	Flying / Whenever this creature attacks, target creature you control without flying gets +1/+1 until end of turn.
+Thrill of Possibility	1	R	Instant	2	legal		210	fdn	As an additional cost to cast this spell, discard a card. / Draw two cards.
+Valley Questcaller	1	W	Creature — Rabbit Warrior	2	legal		5100	blb	Whenever one or more other Rabbits, Bats, Birds, and/or Mice you control enter, scry 1. / Other Rabbits, Bats, Birds, and Mice you control get +1/+1.
+Valley Rally	1	R	Instant	3	legal		13000	blb	Gift a Food / Creatures you control get +2/+0 until end of turn. If the gift was promised, target creature you control gains first strike until end of turn.
+Waterspout Warden	1	U	Creature — Frog Soldier	3	legal		14000	blb	Whenever this creature attacks, if another creature entered the battlefield under your control this turn, this creature gains flying until end of turn.
+Wax-Wane Witness	1	W	Creature — Bat Cleric	4	legal		14000	blb	Flying, vigilance / Whenever you gain or lose life during your turn, this creature gets +1/+0 until end of turn.
+Wick, the Whorled Mind	1	UBR	Legendary Creature — Rat Warlock	4	legal		9500	blb	Whenever Wick or another Rat you control enters, create a 1/1 black Snail creature token if you don't control a Snail. Otherwise, put a +1/+1 counter on a Snail you control. / {U}{B}{R}, Sacrifice a Snail: Wick deals damage equal to the sacrificed creature's power to each opponent. Then draw cards equal to the sacrificed creature's power.

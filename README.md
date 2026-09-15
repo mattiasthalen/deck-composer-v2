@@ -8,5 +8,6 @@ children; decisions in `docs/adr/`; vocabulary in `docs/lexicon.md`.
 ```sh
 uv sync
 uv run deck-composer ingest exports/ManaBox_Collection.csv
+uv run deck-composer cards enrich
 uv run pytest
 ```
